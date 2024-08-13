@@ -1,0 +1,23 @@
+*tables:
+
+1. tbl_services:
+schemas:
+- id
+- title
+- description
+- url
+- feature_image
+
+default row:
+1. id: 1, title: IT Help Desk, description: Description, url: /app/it-help-desk, feature_image: images/help-desk-svgrepo-com.svg
+
+2. tbl_service_type:
+schemas:
+- id
+- service_id
+- type
+- description
+- feature_image
+
+default row:
+1. id: 1, service_id: 1, type: Get IT Help, description: Get assistance for general IT problems and questions, url: /app/it-help-desk/get-it-help, feature_image: images/help-desk-svgrepo-com.svg
