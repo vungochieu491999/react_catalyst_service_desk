@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "23219000000012009",
+      "name": "smartosc",
+      "domain": {
+        "id": "10086316793",
+        "name": "smartosc-858503337.development"
+      },
+      "timezone": "Asia/Ho_Chi_Minh",
+      "env": [
+        {
+          "idx": 1,
+          "id": "858503337",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+/* Reset margin cho body và p */
+body,
+p {
+  margin: 0;
+  padding: 0; /* Thêm padding: 0 để đảm bảo không có khoảng cách ngoài mong muốn */
+}
+
+/* Đặt box-sizing cho tất cả các phần tử để bao gồm padding và border trong kích thước tổng thể */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Đặt font-family cho toàn bộ trang */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Reset thuộc tính cho input */
+input {
+  margin: 0;
+  resize: none;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Reset thuộc tính cho button */
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+}
