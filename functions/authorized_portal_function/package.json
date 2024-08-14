@@ -1,0 +1,9 @@
+{
+	"name": "authorized_portal_function",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "hieuvn@smartosc.com",
+	"dependencies": {
+		"zcatalyst-sdk-node": "latest"
+	}
+}

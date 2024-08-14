@@ -2,7 +2,8 @@
   "functions": {
     "targets": [
       "todo_list_advanced_function",
-      "service_desk_advanced_function"
+      "service_desk_advanced_function",
+      "authorized_portal_function"
     ],
     "ignore": [],
     "source": "functions"
