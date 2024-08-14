@@ -3,8 +3,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/home';
 import HomeTodo from './pages/home-todo';
-import ITHelpDesk from './pages/it-help-desk';
-import CreateRequest from './pages/create-request';
+import PortalDetail from './pages/client/portal/detail';
+import PortalList from './pages/client/portal';
 
 const App: React.FC = () => {
   return (
@@ -12,11 +12,9 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/app" element={<Home />} />
-          <Route path="/app/it-help-desk" element={<ITHelpDesk />} />
-          <Route path="/app/hr-help-desk" element={<ITHelpDesk />} />
-          <Route path="/app/central-service-desk" element={<ITHelpDesk />} />
-          <Route path="/app/create-request" element={<CreateRequest />} />
           <Route path="/app/todo-list-app" element={<HomeTodo />} />
+          <Route path="/app/portal" element={<PortalList />} />
+          <Route path="/app/portal/:id" element={<PortalDetail />} />
           <Route path="*" element={<h2>404 Not Found</h2>} />
         </Routes>
     </Router>
