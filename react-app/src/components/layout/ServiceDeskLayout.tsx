@@ -17,8 +17,6 @@ export default function ServiceDeskLayout({ children }: Props) {
         <div id="page-content-wrapper">
             {children}
         </div>
-
-        <Footer/>
     </Box>
   );
 }

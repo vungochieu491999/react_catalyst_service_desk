@@ -7,6 +7,7 @@ import IconButton from '@mui/material/IconButton';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
+import Link from '@mui/material/Link';
 
 export default function MainNav() {
   const [auth, setAuth] = React.useState(true);
@@ -26,11 +27,15 @@ export default function MainNav() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" sx={{
+        backgroundColor:"#205081"
+      }}>
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Service Desk
-          </Typography>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              <Link href={process.env.PUBLIC_URL} underline="none" color="inherit">
+                Service Desk
+              </Link>
+            </Typography>
           {auth && (
             <div>
               <IconButton

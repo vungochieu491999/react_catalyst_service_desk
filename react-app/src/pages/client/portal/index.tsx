@@ -5,6 +5,7 @@ import { Box, Container, Grid, IconButton, Paper, Typography } from '@mui/materi
 import { SearchOutlined } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 import ServiceDeskLayout from '../../../components/layout/ServiceDeskLayout';
+import Footer from '../../../components/layout/footer';
 
 // Define the types for App component state
 interface Portal {
@@ -97,8 +98,13 @@ function PortalList() {
         </Box>
 
         <Container>
+            <Box sx={{
+                padding:2
+            }}>
+                <Typography variant='h5'>All portals</Typography>
+            </Box>
             {/* Grid Layout */}
-            <Box sx={{ padding: 6 }}>
+            <Box sx={{ padding: 2 }}>
                 <Grid container spacing={2} justifyContent="center">
                     {portalItems.length ? (
                         portalItems.map((item, index) => (
@@ -173,6 +179,8 @@ function PortalList() {
                     )}
                 </Grid>
             </Box>
+
+            <Footer/>
         </Container>
     </ServiceDeskLayout>
     );

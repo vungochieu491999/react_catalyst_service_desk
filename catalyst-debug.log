@@ -1133,3 +1133,1445 @@ Response Headers: {"server":"ZGS","date":"Wed, 14 Aug 2024 07:26:19 GMT","conten
 [debug] [2024-08-14T07:26:19.871Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
 
 [debug] [2024-08-14T07:26:19.881Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
+[debug] [2024-08-14T15:19:24.508Z] : 
+[debug] [2024-08-14T15:19:24.509Z] : ----------------------------------------------------------------------
+[debug] [2024-08-14T15:19:24.510Z] : Command:      C:\laragon\bin\nodejs\node-v18\node.exe C:\laragon\bin\nodejs\node-v18\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2024-08-14T15:19:24.510Z] : CLI Version:  1.17.6
+[debug] [2024-08-14T15:19:24.510Z] : Platform:     win32
+[debug] [2024-08-14T15:19:24.511Z] : Node Version: v18.8.0
+[debug] [2024-08-14T15:19:24.520Z] : Time:         Wed Aug 14 2024 22:19:24 GMT+0700 (Indochina Time)
+[debug] [2024-08-14T15:19:24.520Z] : ----------------------------------------------------------------------
+[debug] [2024-08-14T15:19:24.521Z] : 
+[debug] [2024-08-14T15:19:35.433Z] : > authorizing via signed-in user option
+[debug] [2024-08-14T15:19:35.433Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2024-08-14T15:19:35.479Z] : > refreshing access token <
+[debug] [2024-08-14T15:19:35.480Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-08-14T15:19:37.766Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 14 Aug 2024 15:19:38 GMT","content-type":"application/json;charset=UTF-8","content-length":"1980","connection":"close","set-cookie":["zalb_b266a5bf57=9f371135a524e2d1f51eb9f41fa26c60; Path=/","iamcsr=65e5312d-e0d1-4041-aaf9-00bd49c89b8a;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=65e5312d-e0d1-4041-aaf9-00bd49c89b8a;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-08-14T15:19:37.777Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/23219000000012009 
+
+[debug] [2024-08-14T15:19:38.988Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 14 Aug 2024 15:19:41 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=1251fc82-6c58-4098-99ed-107bddd0547f;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=1251fc82-6c58-4098-99ed-107bddd0547f;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-08-14T15:19:38.990Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/23219000000012009/environment 
+
+[debug] [2024-08-14T15:19:39.944Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 14 Aug 2024 15:19:42 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=c1ee35df-46f7-4a84-8704-ea60ad94dd47;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=c1ee35df-46f7-4a84-8704-ea60ad94dd47;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-08-14T15:19:42.605Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/23219000000012009/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2024-08-14T15:19:44.416Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 14 Aug 2024 15:19:46 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/","ZD_CSRF_TOKEN=40bbcef6-36d6-4ef6-b04c-8569a890b763;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=40bbcef6-36d6-4ef6-b04c-8569a890b763;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-08-14T15:19:44.419Z] : unknown eol undefined hence skipping check
+[debug] [2024-08-14T15:19:44.424Z] : unknown eol undefined hence skipping check
+[debug] [2024-08-14T15:19:54.292Z] : http port : '4000' is not available. Hence port '4001' will be used instead.
+[info] [2024-08-14T15:20:17.425Z] : [react-plugin]: Starting the development server...
+
+[info] [2024-08-14T15:20:17.426Z] : 
+[info] [2024-08-14T15:20:17.427Z] : i Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2024-08-14T15:20:17.428Z] : 
+[info] [2024-08-14T15:20:26.964Z] : 
+[info] [2024-08-14T15:20:26.965Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2024-08-14T15:20:26.966Z] : i todo_list_advanced_function   : http://localhost:3000/server/todo_list_advanced_function/
+[info] [2024-08-14T15:20:26.967Z] : i service_desk_advanced_function: http://localhost:3000/server/service_desk_advanced_function/
+[info] [2024-08-14T15:20:26.968Z] : 
+[info] [2024-08-14T15:20:26.968Z] : 
+[info] [2024-08-14T15:20:26.969Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2024-08-14T15:20:26.969Z] : i client[react-app]: http://localhost:3000/app/
+[info] [2024-08-14T15:20:26.969Z] : 
+[info] [2024-08-14T15:20:49.844Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T15:20:49.846Z] : [react-plugin]: [eslint] 
+src\pages\client\portal\detail.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T15:20:49.847Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T15:20:49.847Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[debug] [2024-08-14T16:28:02.860Z] : > refreshing access token <
+[debug] [2024-08-14T16:28:02.862Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-08-14T16:28:02.876Z] : > refreshing access token <
+[debug] [2024-08-14T16:28:02.877Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-08-14T16:28:03.665Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 14 Aug 2024 16:28:06 GMT","content-type":"application/json;charset=UTF-8","content-length":"1980","connection":"close","set-cookie":["zalb_b266a5bf57=a7f15cb1555106de5ac96d088b72e7c8; Path=/","iamcsr=efdf38e9-50d8-4b13-b1e1-288982721eb3;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=efdf38e9-50d8-4b13-b1e1-288982721eb3;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-08-14T16:28:03.697Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 14 Aug 2024 16:28:06 GMT","content-type":"application/json;charset=UTF-8","content-length":"1980","connection":"close","set-cookie":["zalb_b266a5bf57=9f371135a524e2d1f51eb9f41fa26c60; Path=/","iamcsr=ca16e040-0f45-413e-9f6c-6b3513dfec1d;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=ca16e040-0f45-413e-9f6c-6b3513dfec1d;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-08-14T16:29:02.215Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:29:03.876Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:29:03.885Z] : [react-plugin]: [eslint] 
+src\pages\client\portal\detail.tsx
+  Line 3:8:    'TextField' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 4:10:   'Box' is defined but never used                   @typescript-eslint/no-unused-vars
+  Line 4:15:   'Container' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 4:26:   'Grid' is defined but never used                  @typescript-eslint/no-unused-vars
+  Line 4:32:   'IconButton' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 4:44:   'Paper' is defined but never used                 @typescript-eslint/no-unused-vars
+  Line 4:51:   'Typography' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 5:10:   'SearchOutlined' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 6:10:   'Link' is defined but never used                  @typescript-eslint/no-unused-vars
+  Line 23:18:  'setPage' is assigned a value but never used      @typescript-eslint/no-unused-vars
+  Line 24:12:  'notes' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  Line 25:12:  'portalItems' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used      @typescript-eslint/no-unused-vars
+  Line 29:11:  'onChange' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:29:03.885Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:29:03.886Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:29:27.142Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:29:28.130Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:29:28.137Z] : [react-plugin]: [eslint] 
+src\pages\client\portal\detail.tsx
+  Line 1:8:    'axios' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used     @typescript-eslint/no-unused-vars
+  Line 2:23:   'useEffect' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 2:34:   'useState' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 3:8:    'TextField' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:10:   'Box' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 4:15:   'Container' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:26:   'Grid' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 4:32:   'IconButton' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 4:44:   'Paper' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 4:51:   'Typography' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 5:10:   'SearchOutlined' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:10:   'Link' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 10:11:  'Portal' is defined but never used          @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:29:28.137Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:29:28.138Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:29:54.672Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:29:55.705Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:29:55.713Z] : [react-plugin]: [eslint] 
+src\pages\client\portal\detail.tsx
+  Line 1:8:    'axios' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used     @typescript-eslint/no-unused-vars
+  Line 2:23:   'useEffect' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 2:34:   'useState' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 3:8:    'TextField' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:10:   'Box' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 4:15:   'Container' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:26:   'Grid' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 4:32:   'IconButton' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 4:44:   'Paper' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 4:51:   'Typography' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 5:10:   'SearchOutlined' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:10:   'Link' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 10:11:  'Portal' is defined but never used          @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:29:55.713Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:29:55.714Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:30:33.858Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:30:35.035Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:30:35.041Z] : [react-plugin]: [eslint] 
+src\pages\client\portal\detail.tsx
+  Line 1:8:    'axios' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 2:23:   'useEffect' is defined but never used    @typescript-eslint/no-unused-vars
+  Line 2:34:   'useState' is defined but never used     @typescript-eslint/no-unused-vars
+  Line 4:15:   'Container' is defined but never used    @typescript-eslint/no-unused-vars
+  Line 4:26:   'Grid' is defined but never used         @typescript-eslint/no-unused-vars
+  Line 4:44:   'Paper' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 6:10:   'Link' is defined but never used         @typescript-eslint/no-unused-vars
+  Line 10:11:  'Portal' is defined but never used       @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:30:35.041Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:30:35.042Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:30:35.245Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2024-08-14T16:30:39.478Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:30:40.621Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:30:40.626Z] : [react-plugin]: [eslint] 
+src\pages\client\portal\detail.tsx
+  Line 1:8:    'axios' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 2:23:   'useEffect' is defined but never used    @typescript-eslint/no-unused-vars
+  Line 2:34:   'useState' is defined but never used     @typescript-eslint/no-unused-vars
+  Line 4:15:   'Container' is defined but never used    @typescript-eslint/no-unused-vars
+  Line 4:26:   'Grid' is defined but never used         @typescript-eslint/no-unused-vars
+  Line 4:44:   'Paper' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 6:10:   'Link' is defined but never used         @typescript-eslint/no-unused-vars
+  Line 10:11:  'Portal' is defined but never used       @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:30:40.627Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:30:40.628Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:30:40.848Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2024-08-14T16:30:51.071Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:30:52.035Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:30:52.041Z] : [react-plugin]: [eslint] 
+src\pages\client\portal\detail.tsx
+  Line 1:8:    'axios' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used     @typescript-eslint/no-unused-vars
+  Line 2:23:   'useEffect' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 2:34:   'useState' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 3:8:    'TextField' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:15:   'Container' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:26:   'Grid' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 4:32:   'IconButton' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 4:44:   'Paper' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 4:51:   'Typography' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 5:10:   'SearchOutlined' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:10:   'Link' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 10:11:  'Portal' is defined but never used          @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:30:52.042Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:30:52.042Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:31:22.017Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:31:23.246Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:31:23.253Z] : [react-plugin]: [eslint] 
+src\pages\client\portal\detail.tsx
+  Line 1:8:    'axios' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used     @typescript-eslint/no-unused-vars
+  Line 2:23:   'useEffect' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 2:34:   'useState' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 3:8:    'TextField' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:15:   'Container' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:26:   'Grid' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 4:32:   'IconButton' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 4:44:   'Paper' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 4:51:   'Typography' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 5:10:   'SearchOutlined' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:10:   'Link' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 10:11:  'Portal' is defined but never used          @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:31:23.254Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:31:23.254Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:32:31.804Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:32:33.069Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:32:33.074Z] : [react-plugin]: [eslint] 
+src\pages\client\portal\detail.tsx
+  Line 1:8:    'axios' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used     @typescript-eslint/no-unused-vars
+  Line 2:23:   'useEffect' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 2:34:   'useState' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 3:8:    'TextField' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:32:   'IconButton' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 5:10:   'SearchOutlined' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 10:11:  'Portal' is defined but never used          @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:32:33.074Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:32:33.075Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:32:51.687Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:32:52.703Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:32:52.710Z] : [react-plugin]: [eslint] 
+src\pages\client\portal\detail.tsx
+  Line 1:8:    'axios' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used     @typescript-eslint/no-unused-vars
+  Line 2:23:   'useEffect' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 2:34:   'useState' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 3:8:    'TextField' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:32:   'IconButton' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 5:10:   'SearchOutlined' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 10:11:  'Portal' is defined but never used          @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:32:52.711Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:32:52.711Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:32:52.915Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2024-08-14T16:33:03.629Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:33:04.712Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:33:04.719Z] : [react-plugin]: [eslint] 
+src\pages\client\portal\detail.tsx
+  Line 1:8:    'axios' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used     @typescript-eslint/no-unused-vars
+  Line 2:23:   'useEffect' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 2:34:   'useState' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 3:8:    'TextField' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:26:   'Grid' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 4:32:   'IconButton' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 4:44:   'Paper' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 4:51:   'Typography' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 5:10:   'SearchOutlined' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:10:   'Link' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 10:11:  'Portal' is defined but never used          @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:33:04.720Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:33:04.720Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:33:13.737Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:33:14.742Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:33:14.750Z] : [react-plugin]: [eslint] 
+src\pages\client\portal\detail.tsx
+  Line 1:8:    'axios' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used     @typescript-eslint/no-unused-vars
+  Line 2:23:   'useEffect' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 2:34:   'useState' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 3:8:    'TextField' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:26:   'Grid' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 4:32:   'IconButton' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 4:44:   'Paper' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 4:51:   'Typography' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 5:10:   'SearchOutlined' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:10:   'Link' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 10:11:  'Portal' is defined but never used          @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:33:14.751Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:33:14.751Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:33:36.632Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:33:37.892Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:33:37.899Z] : [react-plugin]: [eslint] 
+src\pages\client\portal\detail.tsx
+  Line 1:8:    'axios' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used     @typescript-eslint/no-unused-vars
+  Line 2:23:   'useEffect' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 2:34:   'useState' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 3:8:    'TextField' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:26:   'Grid' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 4:32:   'IconButton' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 4:44:   'Paper' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 4:51:   'Typography' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 5:10:   'SearchOutlined' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:10:   'Link' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 10:11:  'Portal' is defined but never used          @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:33:37.900Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:33:37.900Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:35:07.750Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:35:09.350Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:35:09.357Z] : [react-plugin]: [eslint] 
+src\pages\client\portal\detail.tsx
+  Line 1:8:    'axios' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used     @typescript-eslint/no-unused-vars
+  Line 2:23:   'useEffect' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 2:34:   'useState' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 3:8:    'TextField' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:26:   'Grid' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 4:32:   'IconButton' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 4:44:   'Paper' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 4:51:   'Typography' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 5:10:   'SearchOutlined' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:10:   'Link' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 10:11:  'Portal' is defined but never used          @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:35:09.358Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:35:09.358Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:35:09.569Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2024-08-14T16:36:51.262Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:36:52.760Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:36:52.770Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:8:    'axios' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used     @typescript-eslint/no-unused-vars
+  Line 2:23:   'useEffect' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 2:34:   'useState' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 3:8:    'TextField' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:26:   'Grid' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 4:32:   'IconButton' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 4:44:   'Paper' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 4:51:   'Typography' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 5:10:   'SearchOutlined' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:10:   'Link' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 10:11:  'Portal' is defined but never used          @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:36:52.771Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:36:52.771Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:36:52.978Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2024-08-14T16:38:02.812Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:38:04.284Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:38:04.293Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 17:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:8:    'axios' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used     @typescript-eslint/no-unused-vars
+  Line 2:23:   'useEffect' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 2:34:   'useState' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 3:8:    'TextField' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:26:   'Grid' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 4:32:   'IconButton' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 4:44:   'Paper' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 4:51:   'Typography' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 5:10:   'SearchOutlined' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:10:   'Link' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 10:11:  'Portal' is defined but never used          @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:38:04.294Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:38:04.295Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:38:04.555Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:38:05.687Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:38:05.694Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:8:    'axios' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used     @typescript-eslint/no-unused-vars
+  Line 2:23:   'useEffect' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 2:34:   'useState' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 3:8:    'TextField' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:26:   'Grid' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 4:32:   'IconButton' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 4:44:   'Paper' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 4:51:   'Typography' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 5:10:   'SearchOutlined' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:10:   'Link' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 10:11:  'Portal' is defined but never used          @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:38:05.694Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:38:05.695Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:38:26.213Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:38:27.616Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:38:27.624Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:8:    'axios' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used     @typescript-eslint/no-unused-vars
+  Line 2:23:   'useEffect' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 2:34:   'useState' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 3:8:    'TextField' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:26:   'Grid' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 4:32:   'IconButton' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 4:44:   'Paper' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 4:51:   'Typography' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 5:10:   'SearchOutlined' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:10:   'Link' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 10:11:  'Portal' is defined but never used          @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:38:27.625Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:38:27.625Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:40:13.158Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:40:14.447Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:40:14.456Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:8:    'axios' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used     @typescript-eslint/no-unused-vars
+  Line 2:23:   'useEffect' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 2:34:   'useState' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 3:8:    'TextField' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:26:   'Grid' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 4:32:   'IconButton' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 4:44:   'Paper' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 4:51:   'Typography' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 5:10:   'SearchOutlined' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:10:   'Link' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 10:11:  'Portal' is defined but never used          @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:40:14.457Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:40:14.458Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:40:31.703Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:40:32.882Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:40:32.892Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:8:    'axios' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used     @typescript-eslint/no-unused-vars
+  Line 2:23:   'useEffect' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 2:34:   'useState' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 3:8:    'TextField' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:26:   'Grid' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 4:32:   'IconButton' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 4:44:   'Paper' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 4:51:   'Typography' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 5:10:   'SearchOutlined' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:10:   'Link' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 10:11:  'Portal' is defined but never used          @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:40:32.893Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:40:32.893Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:40:33.127Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2024-08-14T16:40:59.768Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:41:01.360Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:41:01.367Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:8:    'axios' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used     @typescript-eslint/no-unused-vars
+  Line 2:23:   'useEffect' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 2:34:   'useState' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 3:8:    'TextField' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:26:   'Grid' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 4:32:   'IconButton' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 4:44:   'Paper' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 4:51:   'Typography' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 5:10:   'SearchOutlined' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:10:   'Link' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 10:11:  'Portal' is defined but never used          @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:41:01.367Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:41:01.368Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:41:16.487Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:41:17.811Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:41:17.818Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:8:    'axios' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used     @typescript-eslint/no-unused-vars
+  Line 2:23:   'useEffect' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 2:34:   'useState' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 3:8:    'TextField' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:26:   'Grid' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 4:32:   'IconButton' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 4:44:   'Paper' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 4:51:   'Typography' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 5:10:   'SearchOutlined' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:10:   'Link' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 10:11:  'Portal' is defined but never used          @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:41:17.819Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:41:17.819Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:41:30.159Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:41:31.616Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:41:31.623Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:8:    'axios' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used     @typescript-eslint/no-unused-vars
+  Line 2:23:   'useEffect' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 2:34:   'useState' is defined but never used        @typescript-eslint/no-unused-vars
+  Line 3:8:    'TextField' is defined but never used       @typescript-eslint/no-unused-vars
+  Line 4:26:   'Grid' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 4:32:   'IconButton' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 4:44:   'Paper' is defined but never used           @typescript-eslint/no-unused-vars
+  Line 4:51:   'Typography' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 5:10:   'SearchOutlined' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:10:   'Link' is defined but never used            @typescript-eslint/no-unused-vars
+  Line 10:11:  'Portal' is defined but never used          @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:41:31.624Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:41:31.624Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:41:31.816Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2024-08-14T16:45:44.066Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:45:45.404Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:45:45.407Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:45:45.408Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:45:45.409Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:45:45.600Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:45:46.278Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:45:46.283Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:45:46.284Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:45:46.284Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:46:33.567Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:46:34.939Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:46:34.942Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:46:34.942Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:46:34.943Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:47:23.591Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:47:24.980Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:47:24.983Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:47:24.983Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:47:24.984Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:47:58.919Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:48:00.322Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:48:00.325Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:48:00.326Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:48:00.326Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:48:00.512Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:48:01.190Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:48:01.192Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:48:01.193Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:48:01.193Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:48:27.211Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:48:28.461Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:48:28.464Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:48:28.465Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:48:28.465Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:49:34.543Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:49:35.920Z] : [react-plugin]: Failed to compile.
+
+[info] [2024-08-14T16:49:35.925Z] : [react-plugin]: SyntaxError: C:\github\react_catalyst_service_desk\react-app\src\pages\client\portal\detail.tsx: Unterminated JSX contents. (46:37)
+  44 |                         <h1>test</h1>
+  45 |                         <h1>test</h1>
+> 46 |                         <h1>test</h1>
+     |                                      ^
+  47 |         
+  48 |
+[info] [2024-08-14T16:49:36.178Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:49:37.255Z] : [react-plugin]: Failed to compile.
+
+[info] [2024-08-14T16:49:37.259Z] : [react-plugin]: SyntaxError: C:\github\react_catalyst_service_desk\react-app\src\pages\client\portal\detail.tsx: Unterminated JSX contents. (46:37)
+  44 |                         <h1>test</h1>
+  45 |                         <h1>test</h1>
+> 46 |                         <h1>test</h1>
+     |                                      ^
+  47 |         
+  48 |
+[info] [2024-08-14T16:49:39.447Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:49:40.514Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:49:40.517Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:49:40.518Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:49:40.518Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:49:40.726Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:49:41.239Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:49:41.242Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:49:41.243Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:49:41.243Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:50:02.407Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:50:03.776Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:50:03.778Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:50:03.778Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:50:03.779Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:50:11.873Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:50:12.710Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:50:12.714Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:50:12.715Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:50:12.715Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:51:09.368Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:51:10.851Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:51:10.854Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:51:10.855Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:51:10.856Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:56:05.170Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:56:06.657Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:56:06.660Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:56:06.661Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:56:06.661Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:57:26.016Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:57:27.292Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:57:27.294Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:57:27.296Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:57:27.296Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:57:27.488Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:57:28.107Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:57:28.110Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:57:28.111Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:57:28.111Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:58:59.685Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:59:00.937Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:59:00.939Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:59:00.940Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:59:00.940Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:59:41.646Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:59:43.109Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:59:43.112Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:59:43.113Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:59:43.113Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T16:59:43.311Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T16:59:44.056Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T16:59:44.059Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T16:59:44.059Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T16:59:44.060Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:01:01.559Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:01:02.819Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:01:02.821Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:01:02.822Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:01:02.823Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:02:21.522Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:02:22.790Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:02:22.793Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:02:22.794Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:02:22.794Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:02:52.871Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:02:54.321Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:02:54.324Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:02:54.324Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:02:54.325Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:02:54.504Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:02:55.147Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:02:55.151Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:02:55.151Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:02:55.151Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:03:29.145Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:03:30.416Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:03:30.419Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:03:30.420Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:03:30.420Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:04:06.929Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:04:08.077Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:04:08.080Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:04:08.080Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:04:08.080Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:04:19.026Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:04:20.041Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:04:20.044Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:04:20.045Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:04:20.045Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:04:20.218Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:04:20.967Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:04:20.970Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:04:20.970Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:04:20.971Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:04:21.128Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2024-08-14T17:04:45.321Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:04:46.532Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:04:46.534Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:04:46.535Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:04:46.535Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:04:46.711Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:04:47.327Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:04:47.330Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:04:47.331Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:04:47.333Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:05:54.192Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:05:55.359Z] : [react-plugin]: Failed to compile.
+
+[info] [2024-08-14T17:05:55.364Z] : [react-plugin]: SyntaxError: C:\github\react_catalyst_service_desk\react-app\src\pages\client\portal\detail.tsx: Unexpected token, expected "," (46:28)
+  44 |                             overflow: 'visible', // Ensure overflow is visible
+  45 |                             boxSizing: 'border-box' // Include padding and border in width and height
+> 46 |                             boxShadow: '0 10px 20px rgba(0, 0, 0, 0.2)', // Add a bottom shadow on hover
+     |                             ^
+  47 |                             
+  48 |                         }}
+  49 |                     >
+[info] [2024-08-14T17:05:55.658Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:05:56.604Z] : [react-plugin]: Failed to compile.
+
+[info] [2024-08-14T17:05:56.609Z] : [react-plugin]: SyntaxError: C:\github\react_catalyst_service_desk\react-app\src\pages\client\portal\detail.tsx: Unexpected token, expected "," (46:28)
+  44 |                             overflow: 'visible', // Ensure overflow is visible
+  45 |                             boxSizing: 'border-box' // Include padding and border in width and height
+> 46 |                             boxShadow: '0 10px 20px rgba(0, 0, 0, 0.2)', // Add a bottom shadow on hover
+     |                             ^
+  47 |                         }}
+  48 |                     >
+  49 |                         <Box sx={{ padding: 6 }}>
+[info] [2024-08-14T17:05:58.500Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:05:59.512Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:05:59.515Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:05:59.516Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:05:59.516Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:05:59.691Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:06:00.201Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:06:00.204Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:06:00.204Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:06:00.205Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:06:08.175Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:06:09.268Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:06:09.270Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:06:09.271Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:06:09.271Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:06:58.302Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:06:59.692Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:06:59.696Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 5:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:06:59.696Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:06:59.697Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:06:59.926Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2024-08-14T17:07:16.394Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:07:17.647Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:07:17.650Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 6:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:07:17.651Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:07:17.651Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:07:17.895Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:07:18.484Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:07:18.488Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 6:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:07:18.489Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:07:18.489Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:07:33.976Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:07:35.230Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:07:35.233Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 6:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:07:35.234Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:07:35.234Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:07:44.870Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:07:45.986Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:07:45.989Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 6:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:07:45.990Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:07:45.990Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:07:46.143Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:07:46.612Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:07:46.616Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 6:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 23:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 26:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:07:46.616Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:07:46.616Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:08:03.593Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:08:04.843Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:08:04.846Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 6:11:  'Portal' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:08:04.847Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:08:04.847Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:08:05.022Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2024-08-14T17:08:28.160Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:08:29.458Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:08:29.462Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:08:29.463Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:08:29.463Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:08:29.645Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:08:30.318Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:08:30.320Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:08:30.321Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:08:30.321Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:08:39.174Z] : [react-plugin]: Compiling...
+[info] [2024-08-14T17:08:39.894Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-14T17:08:39.898Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-14T17:08:39.898Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-14T17:08:39.899Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-14T17:08:46.144Z] : Shutting down server
+[info] [2024-08-14T17:08:46.334Z] : 
+[info] [2024-08-14T17:08:46.336Z] : √ Shutdown complete
+[debug] [2024-08-14T17:08:46.336Z] : NO ERRORS REGISTERED
+[debug] [2024-08-14T17:08:46.337Z] : EXEC ENDED with event: serve, message: success
+[debug] [2024-08-14T17:08:46.337Z] : TOTAL DURATION OF COMMAND EXEC : 6550991
+[debug] [2024-08-14T17:08:46.369Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2024-08-14T17:08:47.482Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 14 Aug 2024 17:08:49 GMT","content-length":"0","connection":"close","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/","ZD_CSRF_TOKEN=361a58de-2e9a-4a8f-ac49-0e2c2d379d89;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=361a58de-2e9a-4a8f-ac49-0e2c2d379d89;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
