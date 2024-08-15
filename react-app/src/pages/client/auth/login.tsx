@@ -1,12 +1,28 @@
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { Box, Typography, Avatar, Container } from '@mui/material';
+import { styled } from '@mui/system';
 
-// Declare global variables if needed
-declare global {
-  interface Window {
-    catalyst: any; // Add type definition for `catalyst` if available
-  }
-}
+// Styled components
+const StyledContainer = styled(Container)(({ theme }) => ({
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  height: '100vh',
+  padding: 0, // Ensure there's no extra padding
+}));
+
+const StyledAvatar = styled(Avatar)(({ theme }) => ({
+  width: theme.spacing(10),
+  height: theme.spacing(10),
+  marginBottom: theme.spacing(2),
+}));
+
+const StyledLink = styled(Link)(({ theme }) => ({
+  color: theme.palette.primary.main,
+  textDecoration: 'underline',
+}));
 
 const LoginPage: React.FC = () => {
   useEffect(() => {
@@ -18,7 +34,6 @@ const LoginPage: React.FC = () => {
       forgot_password_css_url: "/app/fpwd.css" // Custom CSS for forgot password page
     };
 
-    console.log(window.catalyst);
     // Check if `catalyst` is available before using it
     if (window.catalyst && window.catalyst.auth) {
       window.catalyst.auth.signIn("login", config);
@@ -28,28 +43,36 @@ const LoginPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="container">
-      <img
-        width={80}
-        height={80}
+    <StyledContainer>
+      <StyledAvatar
         src="https://cdn2.iconfinder.com/data/icons/user-management/512/profile_settings-512.png"
         alt="User Icon"
       />
-      <h1 className="title">User Profile Management</h1>
-      <div id="login"></div>
-      <p className="homepage">
+      <Typography variant="h4" component="h1" gutterBottom>
+        User Authentication
+      </Typography>
+      <Box
+        id="login"
+        sx={{
+          width: '100%',
+          height: '100%',
+          maxWidth: 400,
+          maxHeight: '80vh', // Prevent the box from growing too large
+          overflow: 'hidden', // Prevent scrollbars if the content is too big
+        }}
+      >
+        {/* Login iframe or content will be rendered here */}
+      </Box>
+      <Typography variant="body1" align="center" mt={2}>
         <b>
-          Don't have an account?{" "}
-          <Link
-            to="/signup"
-            style={{ color: "blue", textDecoration: "underline" }}
-          >
+          Don't have an account?{' '}
+          <StyledLink to="/app/signup">
             Sign-up
-          </Link>{" "}
+          </StyledLink>{' '}
           now!
         </b>
-      </p>
-    </div>
+      </Typography>
+    </StyledContainer>
   );
 };
 

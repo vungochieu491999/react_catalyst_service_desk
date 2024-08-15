@@ -1,71 +1,36 @@
 import * as React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import AccountCircle from '@mui/icons-material/AccountCircle';
-import MenuItem from '@mui/material/MenuItem';
-import Menu from '@mui/material/Menu';
-import Link from '@mui/material/Link';
+import { Link } from 'react-router-dom';
 
 export default function MainNav() {
   const [auth, setAuth] = React.useState(true);
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setAuth(event.target.checked);
-  };
-
-  const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{
-        backgroundColor:"#205081"
-      }}>
+      <AppBar position="static" sx={{ backgroundColor: "#205081" }}>
         <Toolbar>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              <Link href={process.env.PUBLIC_URL} underline="none" color="inherit">
-                Service Desk
-              </Link>
-            </Typography>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            <RouterLink to={process.env.PUBLIC_URL || '/'} style={{ textDecoration: 'none', color: 'inherit' }}>
+              Service Desk
+            </RouterLink>
+          </Typography>
           {auth && (
             <div>
-              <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleMenu}
-                color="inherit"
-              >
-                <AccountCircle />
-              </IconButton>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorEl}
-                anchorOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                open={Boolean(anchorEl)}
-                onClose={handleClose}
-              >
-                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                <MenuItem onClick={handleClose}>My account</MenuItem>
-              </Menu>
+              <Link to={`/app/profile/`} target="_blank" style={{ textDecoration: 'none' }}>
+                <IconButton
+                  size="large"
+                  aria-label="account of current user"
+                  sx={{ color: 'white' }} // Set icon color to white
+                >
+                  <AccountCircle />
+                </IconButton>
+              </Link>
             </div>
           )}
         </Toolbar>

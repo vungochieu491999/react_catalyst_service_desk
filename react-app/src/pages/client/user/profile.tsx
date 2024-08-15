@@ -1,6 +1,6 @@
-import Button from "./Button";
-import "./UserProfile.css";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
+import { Card, CardContent, Typography, Avatar, Button as MuiButton, CircularProgress } from '@mui/material';
+import { styled } from '@mui/system';
 
 // Define the type for userDetails
 interface UserDetails {
@@ -22,21 +22,29 @@ interface AuthResult {
   };
 }
 
+// Styled Card component with shadow
+const StyledCard = styled(Card)({
+  maxWidth: 600,
+  margin: '20px auto',
+  padding: '20px',
+  boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
+});
+
 const UserProfile: React.FC = () => {
   const [isFetching, setIsFetching] = useState<boolean>(true);
   const [isUserAuthenticated, setIsUserAuthenticated] = useState<boolean>(false);
   const [userDetails, setUserDetails] = useState<UserDetails>({
-    firstName: "",
-    lastName: "",
-    mailid: "",
-    timeZone: "",
-    createdTime: "",
+    firstName: '',
+    lastName: '',
+    mailid: '',
+    timeZone: '',
+    createdTime: '',
   });
 
   useEffect(() => {
     const fetchUserDetails = async () => {
       try {
-        const result = await window.catalyst.auth.isUserAuthenticated() as AuthResult;
+        const result = (await window.catalyst.auth.isUserAuthenticated()) as AuthResult;
         setUserDetails({
           firstName: result.content.first_name,
           lastName: result.content.last_name,
@@ -46,7 +54,7 @@ const UserProfile: React.FC = () => {
         });
         setIsUserAuthenticated(true);
       } catch (err) {
-        console.error("Failed to fetch user details:", err);
+        console.error('Failed to fetch user details:', err);
       } finally {
         setIsFetching(false);
       }
@@ -55,39 +63,63 @@ const UserProfile: React.FC = () => {
     fetchUserDetails();
   }, []);
 
-  // Render loading state or user profile
+  const logout = async () => {
+    try {
+      const auth = window.catalyst.auth;
+      await auth.signOut('/');
+      // Redirect user after logout if needed
+      // window.location.href = '/login'; // For example, redirect to login page
+    } catch (err) {
+      console.error('Logout error:', err);
+    }
+  };
+
   if (isFetching) {
-    return <div className="card">Loading...</div>;
+    return (
+      <StyledCard>
+        <CardContent style={{ textAlign: 'center' }}>
+          <CircularProgress />
+        </CardContent>
+      </StyledCard>
+    );
   }
 
   return (
-    <div className="card">
-      <br />
-      <h1 className="title">User Profile Information</h1>
-      <img
-        id="userimg"
-        width={200}
-        height={450}
-        src="https://cdn2.iconfinder.com/data/icons/user-management/512/profile_settings-512.png"
-        alt="User Profile"
-      />
-      <p className="title" id="fname">
-        {"First Name: " + userDetails.firstName}
-      </p>
-      <p className="title" id="lname">
-        {"Last Name: " + userDetails.lastName}
-      </p>
-      <p className="title" id="mailid">
-        {"Email Address: " + userDetails.mailid}
-      </p>
-      <p className="title" id="tzone">
-        {"Time Zone: " + userDetails.timeZone}
-      </p>
-      <p className="title" id="ctime">
-        {"Joined On: " + userDetails.createdTime}
-      </p>
-      <Button btnvalue={{ title: "Logout" }} />
-    </div>
+    <StyledCard>
+      <CardContent>
+        <Typography variant="h4" component="h1" gutterBottom align="center">
+          User Profile Information
+        </Typography>
+        <Avatar
+          alt="User Profile"
+          src="https://cdn2.iconfinder.com/data/icons/user-management/512/profile_settings-512.png"
+          sx={{ width: 100, height: 100, margin: '0 auto', display: 'block' }}
+        />
+        <Typography variant="body1" gutterBottom>
+          <strong>First Name:</strong> {userDetails.firstName}
+        </Typography>
+        <Typography variant="body1" gutterBottom>
+          <strong>Last Name:</strong> {userDetails.lastName}
+        </Typography>
+        <Typography variant="body1" gutterBottom>
+          <strong>Email Address:</strong> {userDetails.mailid}
+        </Typography>
+        <Typography variant="body1" gutterBottom>
+          <strong>Time Zone:</strong> {userDetails.timeZone}
+        </Typography>
+        <Typography variant="body1" gutterBottom>
+          <strong>Joined On:</strong> {userDetails.createdTime}
+        </Typography>
+        <MuiButton 
+          variant="contained" 
+          color="primary" 
+          style={{ marginTop: '20px' }} 
+          onClick={logout} // Connect the logout function to the button's onClick event
+        >
+          Logout
+        </MuiButton>
+      </CardContent>
+    </StyledCard>
   );
 };
 

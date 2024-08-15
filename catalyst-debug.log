@@ -715,3 +715,1577 @@ Response Headers: {"server":"ZGS","date":"Wed, 14 Aug 2024 19:39:16 GMT","conten
 [debug] [2024-08-14T19:39:14.491Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
 
 [debug] [2024-08-14T19:39:14.492Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
+[debug] [2024-08-15T12:03:30.732Z] : 
+[debug] [2024-08-15T12:03:30.766Z] : ----------------------------------------------------------------------
+[debug] [2024-08-15T12:03:30.766Z] : Command:      C:\laragon\bin\nodejs\node-v20.11.1-win-x64\node.exe C:\laragon\bin\nodejs\node-v20.11.1-win-x64\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2024-08-15T12:03:30.766Z] : CLI Version:  1.17.6
+[debug] [2024-08-15T12:03:30.767Z] : Platform:     win32
+[debug] [2024-08-15T12:03:30.767Z] : Node Version: v20.11.1
+[debug] [2024-08-15T12:03:30.768Z] : Time:         Thu Aug 15 2024 19:03:30 GMT+0700 (Indochina Time)
+[debug] [2024-08-15T12:03:30.768Z] : ----------------------------------------------------------------------
+[debug] [2024-08-15T12:03:30.768Z] : 
+[debug] [2024-08-15T12:03:40.492Z] : > authorizing via signed-in user option
+[debug] [2024-08-15T12:03:40.493Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2024-08-15T12:03:40.545Z] : > refreshing access token <
+[debug] [2024-08-15T12:03:40.546Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-08-15T12:03:41.282Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 15 Aug 2024 12:03:41 GMT","content-type":"application/json;charset=UTF-8","content-length":"1980","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=9f371135a524e2d1f51eb9f41fa26c60; Path=/","iamcsr=edcae2fb-eef9-45d9-8aba-a660c5bf06cf;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=edcae2fb-eef9-45d9-8aba-a660c5bf06cf;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-08-15T12:03:41.307Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/23219000000012009 
+
+[debug] [2024-08-15T12:03:42.307Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 15 Aug 2024 12:03:42 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/","ZD_CSRF_TOKEN=44aa0e8b-426c-46f7-a01a-1243e2a5853e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=44aa0e8b-426c-46f7-a01a-1243e2a5853e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-08-15T12:03:42.308Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/23219000000012009/environment 
+
+[debug] [2024-08-15T12:03:42.515Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 15 Aug 2024 12:03:42 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/","ZD_CSRF_TOKEN=9e30ca45-dc46-496e-81b2-4d5cbe7ea7a0;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=9e30ca45-dc46-496e-81b2-4d5cbe7ea7a0;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-08-15T12:03:44.864Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/23219000000012009/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2024-08-15T12:03:45.829Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 15 Aug 2024 12:03:45 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=ced8f27e-e56d-43c1-b76e-48c053e3af60;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=ced8f27e-e56d-43c1-b76e-48c053e3af60;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-08-15T12:03:45.836Z] : unknown eol undefined hence skipping check
+[debug] [2024-08-15T12:03:45.836Z] : unknown eol undefined hence skipping check
+[debug] [2024-08-15T12:03:45.837Z] : unknown eol undefined hence skipping check
+[debug] [2024-08-15T12:03:51.038Z] : http port : '4000' is not available. Hence port '4001' will be used instead.
+[info] [2024-08-15T12:04:19.847Z] : [react-plugin]: Starting the development server...
+
+[info] [2024-08-15T12:04:19.848Z] : 
+[info] [2024-08-15T12:04:19.849Z] : i Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2024-08-15T12:04:19.849Z] : 
+[info] [2024-08-15T12:04:31.887Z] : 
+[info] [2024-08-15T12:04:31.887Z] :  >>>>>>>>>>>>>> BasicIO <<<<<<<<<<<<<< 
+[info] [2024-08-15T12:04:31.888Z] : i authorized_portal_function: http://localhost:3000/server/authorized_portal_function/execute
+[info] [2024-08-15T12:04:31.888Z] : 
+[info] [2024-08-15T12:04:31.888Z] : 
+[info] [2024-08-15T12:04:31.889Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2024-08-15T12:04:31.889Z] : i todo_list_advanced_function   : http://localhost:3000/server/todo_list_advanced_function/
+[info] [2024-08-15T12:04:31.890Z] : i service_desk_advanced_function: http://localhost:3000/server/service_desk_advanced_function/
+[info] [2024-08-15T12:04:31.890Z] : 
+[info] [2024-08-15T12:04:31.890Z] : 
+[info] [2024-08-15T12:04:31.891Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2024-08-15T12:04:31.891Z] : i client[react-app]: http://localhost:3000/app/
+[info] [2024-08-15T12:04:31.891Z] : 
+[info] [2024-08-15T12:05:10.861Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:05:10.864Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:05:10.865Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:05:10.865Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:07:35.837Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:07:36.966Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:07:36.969Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:07:36.969Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:07:36.970Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:08:25.719Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:08:26.397Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:08:26.400Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:08:26.401Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:08:26.402Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:10:00.660Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:10:00.663Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:10:00.663Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:10:00.664Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:10:05.321Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:10:06.069Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:10:06.073Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:10:06.074Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:10:06.074Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:10:07.106Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:10:07.109Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:10:07.110Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:10:07.110Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:10:08.444Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:10:08.949Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:10:08.953Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:10:08.954Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:10:08.955Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:10:25.780Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:10:26.559Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:10:26.562Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:10:26.563Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:10:26.563Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:11:08.263Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:11:09.054Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:11:09.057Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:11:09.058Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:11:09.058Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:11:53.222Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:11:53.821Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:11:53.824Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:11:53.824Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:11:53.825Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:12:31.588Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:12:32.331Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:12:32.333Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:12:32.334Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:12:32.334Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:12:51.507Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:12:52.332Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:12:52.337Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:12:52.338Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:12:52.338Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:13:58.332Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:13:58.936Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:13:58.939Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:13:58.939Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:13:58.940Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:15:06.269Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:15:06.271Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:15:06.272Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:15:06.272Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:15:07.205Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:15:08.022Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:15:08.026Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:15:08.026Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:15:08.027Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:15:09.455Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:15:09.458Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:15:09.459Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:15:09.459Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:15:14.897Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:15:15.419Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:15:15.422Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:15:15.423Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:15:15.423Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:15:45.056Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:15:46.139Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:15:46.141Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:15:46.142Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:15:46.142Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:15:55.933Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:15:56.972Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:15:56.975Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:15:56.975Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:15:56.976Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:15:57.091Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:15:57.514Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:15:57.518Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:15:57.519Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:15:57.520Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:17:34.265Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:17:34.948Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:17:34.952Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:17:34.953Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:17:34.953Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:17:48.003Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:17:48.698Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:17:48.702Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:17:48.702Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:17:48.703Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:19:01.307Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:19:02.055Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:19:02.058Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:19:02.058Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:19:02.059Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:19:04.700Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:19:05.284Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:19:05.288Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:19:05.289Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:19:05.289Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:19:15.987Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:19:16.562Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:19:16.565Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:19:16.566Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:19:16.566Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:20:14.465Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:20:15.838Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:20:15.842Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:20:15.842Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:20:15.843Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:21:54.738Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:21:55.814Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:21:55.818Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:21:55.818Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:21:55.818Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:28:14.393Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:28:24.207Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:28:24.210Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:28:24.211Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:28:24.211Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:28:24.363Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:28:24.804Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:28:24.807Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:28:24.808Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:28:24.808Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:29:42.043Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:29:43.070Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:29:43.074Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:29:43.075Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:29:43.075Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:37:07.016Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:37:08.115Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:37:08.119Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:37:08.120Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:37:08.120Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:42:06.681Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:42:14.153Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:42:14.156Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:42:14.157Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:42:14.157Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:42:29.458Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:42:30.615Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:42:30.619Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 27:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:42:30.619Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:42:30.620Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:45:24.196Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:45:28.149Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:45:28.153Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 26:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:45:28.153Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:45:28.154Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:45:28.282Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:45:29.707Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:45:29.710Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 26:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:45:29.710Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:45:29.711Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:51:51.715Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:51:53.900Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:51:53.904Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:51:53.904Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:51:53.904Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:51:54.623Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:51:55.370Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:51:55.373Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:51:55.374Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:51:55.374Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:57:02.231Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:57:03.726Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:57:03.729Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:57:03.730Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:57:03.730Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:57:03.869Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:57:04.628Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:57:04.631Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:57:04.632Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:57:04.632Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:57:37.872Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:57:37.876Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:57:37.877Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:57:37.877Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:58:41.134Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:58:42.198Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:58:42.202Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:58:42.203Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:58:42.204Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:58:42.523Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2024-08-15T12:59:07.277Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:59:08.103Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:59:08.106Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:59:08.106Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:59:08.107Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:59:11.988Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:59:12.983Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:59:12.988Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:59:12.989Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:59:12.990Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:59:14.732Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:59:16.135Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:59:16.139Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:59:16.139Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:59:16.140Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T12:59:16.284Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2024-08-15T12:59:22.746Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T12:59:23.722Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T12:59:23.726Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T12:59:23.727Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T12:59:23.727Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:00:18.800Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:00:20.452Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:00:20.466Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:00:20.486Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:00:20.497Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:00:20.766Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2024-08-15T13:00:26.921Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:00:27.759Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:00:27.764Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:00:27.765Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:00:27.765Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:01:49.980Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:01:52.334Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:01:52.337Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:01:52.338Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:01:52.338Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:02:09.796Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:02:10.635Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:02:10.646Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:02:10.649Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:02:10.654Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:02:10.916Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:02:11.464Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:02:11.468Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:02:11.468Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:02:11.469Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:02:24.470Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:02:26.067Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:02:26.071Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:02:26.072Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:02:26.073Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:02:26.247Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2024-08-15T13:02:35.078Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:02:36.158Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:02:36.164Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:02:36.165Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:02:36.165Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:02:36.364Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[debug] [2024-08-15T13:03:47.044Z] : > refreshing access token <
+[debug] [2024-08-15T13:03:47.065Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[info] [2024-08-15T13:03:47.129Z] : [react-plugin]: Compiling...
+[debug] [2024-08-15T13:03:47.744Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 15 Aug 2024 13:03:47 GMT","content-type":"application/json;charset=UTF-8","content-length":"1980","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=9f371135a524e2d1f51eb9f41fa26c60; Path=/","iamcsr=4bfd1cf0-7443-49c5-9c45-23bed5d79cd1;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4bfd1cf0-7443-49c5-9c45-23bed5d79cd1;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-08-15T13:03:48.899Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:03:48.905Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:03:48.906Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:03:48.907Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:03:49.079Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2024-08-15T13:05:07.413Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:05:08.181Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:05:08.184Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 16:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:05:08.184Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:05:08.185Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:06:02.403Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:06:05.077Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:06:05.081Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 18:9:  'handleChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:06:05.081Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:06:05.082Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:06:05.230Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2024-08-15T13:07:22.034Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:07:23.515Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:07:23.520Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 9:8:    'MenuItem' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 10:8:   'Menu' is defined but never used                  @typescript-eslint/no-unused-vars
+  Line 14:16:  'setAuth' is assigned a value but never used      @typescript-eslint/no-unused-vars
+  Line 15:10:  'anchorEl' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 15:20:  'setAnchorEl' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:07:23.521Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:07:23.521Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:07:23.665Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:07:24.344Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:07:24.349Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 9:8:    'MenuItem' is defined but never used              @typescript-eslint/no-unused-vars
+  Line 10:8:   'Menu' is defined but never used                  @typescript-eslint/no-unused-vars
+  Line 14:16:  'setAuth' is assigned a value but never used      @typescript-eslint/no-unused-vars
+  Line 15:10:  'anchorEl' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 15:20:  'setAnchorEl' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:07:24.350Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:07:24.350Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:07:50.586Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:07:51.745Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:07:51.748Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:07:51.749Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:07:51.749Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:08:21.786Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:08:23.170Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:08:23.175Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 11:16:  'setAuth' is assigned a value but never used             @typescript-eslint/no-unused-vars
+  Line 13:9:   'handleProfileClick' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:08:23.176Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:08:23.176Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:08:33.548Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:08:34.599Z] : [react-plugin]: Failed to compile.
+
+[info] [2024-08-15T13:08:34.601Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 24:16:  'Link' is not defined  react/jsx-no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2024-08-15T13:08:34.728Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:08:35.203Z] : [react-plugin]: Failed to compile.
+
+[info] [2024-08-15T13:08:35.205Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 24:16:  'Link' is not defined  react/jsx-no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2024-08-15T13:09:32.063Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:09:33.179Z] : [react-plugin]: Failed to compile.
+
+[info] [2024-08-15T13:09:33.180Z] : [react-plugin]: [eslint] 
+src\components\layout\horizontal\main-nav.tsx
+  Line 24:16:  'Link' is not defined  react/jsx-no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2024-08-15T13:09:46.721Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:09:47.963Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:09:47.966Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:09:47.967Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:09:47.967Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:09:48.105Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:09:48.970Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:09:48.975Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:09:48.976Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:09:48.977Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:09:51.924Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:09:52.653Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:09:52.656Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:09:52.657Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:09:52.658Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:11:04.853Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:11:05.568Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:11:05.572Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:11:05.573Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:11:05.573Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:11:09.470Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:11:10.845Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:11:10.851Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:11:10.851Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:11:10.852Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:11:58.590Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:11:59.640Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:11:59.643Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:11:59.644Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:11:59.644Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:15:37.551Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:15:39.151Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:15:39.154Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:15:39.155Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:15:39.155Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:15:39.330Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2024-08-15T13:16:50.951Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:16:52.631Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:16:52.634Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:16:52.635Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:16:52.636Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:18:00.774Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:18:01.900Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:18:01.903Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:18:01.904Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:18:01.904Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:19:09.448Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:19:10.720Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:19:10.724Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:19:10.725Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:19:10.725Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:19:10.955Z] : [react-plugin]: Compiling...
+[info] [2024-08-15T13:19:11.422Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-15T13:19:11.427Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 4:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 6:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\index.tsx
+  Line 24:18:  'setPage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  Line 27:12:  'hasMore' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-15T13:19:11.428Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-15T13:19:11.428Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-15T13:19:27.331Z] : Shutting down server
+[info] [2024-08-15T13:19:27.563Z] : 
+[info] [2024-08-15T13:19:27.566Z] : √ Shutdown complete
+[debug] [2024-08-15T13:19:27.567Z] : NO ERRORS REGISTERED
+[debug] [2024-08-15T13:19:27.567Z] : EXEC ENDED with event: serve, message: success
+[debug] [2024-08-15T13:19:27.567Z] : TOTAL DURATION OF COMMAND EXEC : 4547165
+[debug] [2024-08-15T13:19:27.620Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2024-08-15T13:19:29.798Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Thu, 15 Aug 2024 13:19:29 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"147","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=ed5adb70-61a5-4844-80aa-bbf08bdbde2c;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=ed5adb70-61a5-4844-80aa-bbf08bdbde2c;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=98B48FBC964C963E02C2E04FA489ED09; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-08-15T13:19:29.801Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
+
+[debug] [2024-08-15T13:19:29.803Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range

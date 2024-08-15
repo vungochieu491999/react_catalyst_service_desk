@@ -8,19 +8,28 @@ import PortalList from './pages/client/portal';
 import Signup from './pages/client/auth/signup';
 import LoginPage from './pages/client/auth/login';
 import UserProfile from './pages/client/user/profile';
+import AuthRoute from './utils/AuthRoute';
+
+declare global {
+  interface Window {
+    catalyst: any; // Add type definition for `catalyst` if available
+  }
+}
 
 const App: React.FC = () => {
   return (
     <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/app" element={<Home />} />
           <Route path="/app/signup" element={<Signup />} />
           <Route path="/app/login" element={<LoginPage />} />
-          <Route path="/app/profile" element={<UserProfile />} />
-          <Route path="/app/todo-list-app" element={<HomeTodo />} />
-          <Route path="/app/portal" element={<PortalList />} />
-          <Route path="/app/portal/:id" element={<PortalDetail />} />
+
+          <Route path="/" element={<AuthRoute element={Home} />} />
+          <Route path="/app" element={<AuthRoute element={Home} />} />
+          <Route path="/app/profile" element={<AuthRoute element={UserProfile} />} />
+          <Route path="/app/todo-list-app" element={<AuthRoute element={HomeTodo} />} />
+          <Route path="/app/portal" element={<AuthRoute element={PortalList} />} />
+          <Route path="/app/portal/:id" element={<AuthRoute element={PortalDetail} />} />
+
           <Route path="*" element={<h2>404 Not Found</h2>} />
         </Routes>
     </Router>
