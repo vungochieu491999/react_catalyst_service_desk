@@ -1,4 +1,3 @@
-import "./Signup.css";
 import React, { useState, ChangeEvent, FormEvent } from "react";
 
 interface FormState {

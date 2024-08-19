@@ -22,14 +22,14 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/app/signup" element={<Signup />} />
           <Route path="/app/login" element={<LoginPage />} />
-
-          <Route path="/" element={<AuthRoute element={Home} />} />
-          <Route path="/app" element={<AuthRoute element={Home} />} />
-          <Route path="/app/profile" element={<AuthRoute element={UserProfile} />} />
-          <Route path="/app/todo-list-app" element={<AuthRoute element={HomeTodo} />} />
-          <Route path="/app/portal" element={<AuthRoute element={PortalList} />} />
-          <Route path="/app/portal/:id" element={<AuthRoute element={PortalDetail} />} />
-
+          <Route path="/app/todo-list-app" element={<HomeTodo />} />
+          <Route element={<AuthRoute/>}>
+            <Route path="/" element={<Home />} />
+            <Route path="/app" element={<Home />} />
+            <Route path="/app/profile" element={<UserProfile />} />
+            <Route path="/app/portal" element={<PortalList />} />
+            <Route path="/app/portal/:id" element={<PortalDetail />} />
+          </Route>
           <Route path="*" element={<h2>404 Not Found</h2>} />
         </Routes>
     </Router>

@@ -1,0 +1,18 @@
+//
+SELECT p.ROWID, p.name, p.descriptions
+FROM Portals p
+WHERE p.ROWID = 23219000000033798
+
+//
+SELECT s.ROWID, s.name, s.descriptions
+FROM Services s
+JOIN ServicePortals sp ON s.ROWID = sp.serviceId
+WHERE sp.portalId = 23219000000033798
+
+//
+SELECT p.ROWID, p.name, p.descriptions,
+       s.ROWID, s.name, s.descriptions
+FROM Portals p
+JOIN ServicePortals sp ON p.ROWID = sp.portalId
+JOIN Services s ON sp.serviceId = s.ROWID
+WHERE p.ROWID = 23219000000033798

@@ -1,12 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { Navigate, useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Navigate, useLocation, Outlet  } from 'react-router-dom';
 
-interface AuthRouteProps {
-  element: React.ComponentType<any>;
-  [key: string]: any; // Allow any additional props
-}
-
-const AuthRoute: React.FC<AuthRouteProps> = ({ element: Component, ...rest }) => {
+const AuthRoute = () => {
   const [isUserAuthenticated, setIsUserAuthenticated] = useState<boolean>(false);
   const [isFetching, setIsFetching] = useState<boolean>(true);
   const location = useLocation();
@@ -14,11 +9,16 @@ const AuthRoute: React.FC<AuthRouteProps> = ({ element: Component, ...rest }) =>
   useEffect(() => {
     const checkAuthentication = async () => {
       try {
-        const result = await window.catalyst.auth.isUserAuthenticated();
-        console.log(result);
-        setIsUserAuthenticated(result);
+        if (window.catalyst && window.catalyst.auth) {
+          const result = await window.catalyst.auth.isUserAuthenticated();
+          setIsUserAuthenticated(result);
+        } else {
+          console.error('Zoho Catalyst SDK is not loaded.');
+          setIsUserAuthenticated(false);
+        }
       } catch (err) {
         console.error('Authentication check failed', err);
+        setIsUserAuthenticated(false);
       } finally {
         setIsFetching(false);
       }
@@ -31,11 +31,8 @@ const AuthRoute: React.FC<AuthRouteProps> = ({ element: Component, ...rest }) =>
     return <p>Loading…</p>;
   }
 
-  return isUserAuthenticated ? (
-    <Component {...rest} />
-  ) : (
-    <Navigate to="/app/login" state={{ from: location }} />
-  );
+  if (!isUserAuthenticated) return <Navigate to="/app/login" state={{ from: location }} />;
+  return <Outlet />;
 };
 
 export default AuthRoute;

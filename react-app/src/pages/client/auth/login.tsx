@@ -1,78 +1,58 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { Box, Typography, Avatar, Container } from '@mui/material';
-import { styled } from '@mui/system';
-
-// Styled components
-const StyledContainer = styled(Container)(({ theme }) => ({
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  height: '100vh',
-  padding: 0, // Ensure there's no extra padding
-}));
-
-const StyledAvatar = styled(Avatar)(({ theme }) => ({
-  width: theme.spacing(10),
-  height: theme.spacing(10),
-  marginBottom: theme.spacing(2),
-}));
-
-const StyledLink = styled(Link)(({ theme }) => ({
-  color: theme.palette.primary.main,
-  textDecoration: 'underline',
-}));
+import { Box, Stack } from '@mui/material';
 
 const LoginPage: React.FC = () => {
   useEffect(() => {
-    // Define configuration for sign-in
-    const config = {
-      css_url: "/app/embeddediframe.css", // Custom CSS for login page
-      is_customize_forgot_password: false, // Whether to customize forgot password page
-      forgot_password_id: "login", // ID where forgot password page will be rendered
-      forgot_password_css_url: "/app/fpwd.css" // Custom CSS for forgot password page
-    };
-
-    // Check if `catalyst` is available before using it
     if (window.catalyst && window.catalyst.auth) {
-      window.catalyst.auth.signIn("login", config);
+      window.catalyst.auth.signIn("login");
     } else {
       console.error("Zoho Catalyst SDK is not loaded.");
     }
   }, []);
 
   return (
-    <StyledContainer>
-      <StyledAvatar
-        src="https://cdn2.iconfinder.com/data/icons/user-management/512/profile_settings-512.png"
-        alt="User Icon"
-      />
-      <Typography variant="h4" component="h1" gutterBottom>
-        User Authentication
-      </Typography>
+    <Stack
+      sx={{
+        height: "100vh",
+        width: "100vw", // Đảm bảo chiều rộng của Stack chiếm toàn bộ viewport
+        backgroundColor: "#817c7c1f",
+        justifyContent: 'center', // Căn giữa theo chiều dọc
+        alignItems: 'center', // Căn giữa theo chiều ngang
+        padding: 0,
+        overflow: 'hidden', // Ngăn cuộn trên toàn bộ trang
+      }}
+    >
       <Box
-        id="login"
         sx={{
+          textAlign: 'center', // Đảm bảo nội dung được căn giữa theo chiều ngang
           width: '100%',
-          height: '100%',
-          maxWidth: 400,
-          maxHeight: '80vh', // Prevent the box from growing too large
-          overflow: 'hidden', // Prevent scrollbars if the content is too big
+          maxWidth: '100%', // Đảm bảo phần tử chứa không vượt quá chiều rộng của viewport
         }}
       >
-        {/* Login iframe or content will be rendered here */}
+        <Box
+          component="img"
+          src={`${process.env.PUBLIC_URL}/images/logo-color-page-1.png`}
+          alt="logo icon"
+          sx={{
+            display: "block",
+            width: "198px",
+            height: "50px",
+            maxWidth: "100%",
+            margin: "0 auto", // Căn giữa hình ảnh theo chiều ngang
+          }}
+        />
+        <Box
+          id="login"
+          sx={{
+            width: '100%',
+            height: 'calc(100vh - 60px)', // Đặt chiều cao iframe để phù hợp với kích thước của viewport, trừ chiều cao của logo
+            maxWidth: '100%', // Đảm bảo iframe không vượt quá chiều rộng của phần tử chứa
+          }}
+        >
+          {/* iframe login zoho */}
+        </Box>
       </Box>
-      <Typography variant="body1" align="center" mt={2}>
-        <b>
-          Don't have an account?{' '}
-          <StyledLink to="/app/signup">
-            Sign-up
-          </StyledLink>{' '}
-          now!
-        </b>
-      </Typography>
-    </StyledContainer>
+    </Stack>
   );
 };
 

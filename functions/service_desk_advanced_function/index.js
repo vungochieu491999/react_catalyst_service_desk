@@ -23,78 +23,26 @@ app.get('/portal', async (req, res) => {
 		let hasMore = false;
 		let portals = [];
 
-		queryCount = 'SELECT COUNT(ROWID) FROM ServicePortals';
+		queryCount = 'SELECT COUNT(ROWID) FROM Portals';
 
 		await ZCQL(catalyst, queryCount)
 		.then((rows) => {
-			hasMore = parseInt(rows[0].ServicePortals.ROWID) > page * perPage;
+			hasMore = parseInt(rows[0].Portals.ROWID) > page * perPage;
 		})
 		.catch((err) => {
 			console.log(err);
 			res.status(500).send(err);
 		});
 
-		queryPortals = `SELECT ROWID,name,descriptions,feature_image FROM ServicePortals LIMIT ${(page - 1) * perPage + 1},${perPage}`;
+		queryPortals = `SELECT ROWID,name,descriptions,feature_image FROM Portals LIMIT ${(page - 1) * perPage + 1},${perPage}`;
 
 		await ZCQL(catalyst, queryPortals)
 		.then((rows) => {
 			portals = rows.map((row) => ({
-				id: row.ServicePortals.ROWID,
-				name: row.ServicePortals.name,
-				descriptions: row.ServicePortals.descriptions,
-				feature_image: row.ServicePortals.feature_image,
-			}))
-		})
-		.catch((err) => {
-			console.log(err);
-			res.status(500).send(err);
-		});
-
-		res.status(200).send({
-			status: 'success',
-			data: {
-				portals,
-				hasMore
-			}
-		});
-	} catch (err) {
-		console.log(err);
-		res.status(500).send({
-		status: 'failure',
-		message: "We're unable to process the request."
-		});
-	}
-});
-
-//search service support
-app.get('/request-type', async (req, res) => {
-	try {
-		var catalyst = catalystSDK.initialize(req);
-		const page = parseInt(req.query.page);
-		const perPage = parseInt(req.query.perPage);
-		let hasMore = false;
-		let portals = [];
-
-		queryCount = 'SELECT COUNT(ROWID) FROM ServicePortals';
-
-		await ZCQL(catalyst, queryCount)
-		.then((rows) => {
-			hasMore = parseInt(rows[0].ServicePortals.ROWID) > page * perPage;
-		})
-		.catch((err) => {
-			console.log(err);
-			res.status(500).send(err);
-		});
-
-		queryPortals = `SELECT ROWID,name,descriptions,feature_image FROM ServicePortals LIMIT ${(page - 1) * perPage + 1},${perPage}`;
-
-		await ZCQL(catalyst, queryPortals)
-		.then((rows) => {
-			portals = rows.map((row) => ({
-				id: row.ServicePortals.ROWID,
-				name: row.ServicePortals.name,
-				descriptions: row.ServicePortals.descriptions,
-				feature_image: row.ServicePortals.feature_image,
+				id: row.Portals.ROWID,
+				name: row.Portals.name,
+				descriptions: row.Portals.descriptions,
+				feature_image: row.Portals.feature_image,
 			}))
 		})
 		.catch((err) => {
@@ -122,22 +70,62 @@ app.get('/request-type', async (req, res) => {
 app.get('/portal/:ROWID', async (req, res) => {
 	try {
 		const { ROWID } = req.params;
+
 		var catalyst = catalystSDK.initialize(req);
-		const table = catalyst.datastore().table('TodoItems');
-		await table.deleteRow(ROWID);
+		let portalDetails = null;
+		let services = [];
+
+		queryPortal = `SELECT p.ROWID, p.name, p.descriptions FROM Portals p WHERE p.ROWID = ${ROWID}`;
+
+		await ZCQL(catalyst, queryPortal)
+		.then((rows) => {
+			if (rows[0]) {
+				portalDetails = {
+					id: rows[0]?.p?.ROWID || null,
+					name: rows[0]?.p?.name || null,
+					descriptions: rows[0]?.p?.descriptions || null,
+				}
+			}
+		})
+		.catch((err) => {
+			console.log(err);
+			res.status(500).send(err);
+		});
+
+		if (portalDetails) {
+			queryServicePortal = `SELECT s.ROWID, s.name, s.descriptions FROM Services s JOIN ServicePortals sp ON s.ROWID = sp.serviceId WHERE sp.portalId = ${ROWID}`;
+
+			await ZCQL(catalyst, queryServicePortal)
+			.then((rows) => {
+				services = rows.map((row) => ({
+					id: row.s.ROWID,
+					name: row.s.name,
+					descriptions: row.s.descriptions,
+				}))
+			})
+			.catch((err) => {
+				console.log(err);
+				res.status(500).send(err);
+			});
+		} else {
+			res.status(500).send({
+				status: 'failure',
+				data: {},
+				error: 1
+			});
+		}
+
 		res.status(200).send({
-		status: 'success',
-		data: {
-		todoItem: {
-		id: ROWID
-		}
-		}
+			status: 'success',
+			data: {
+				portalDetails,
+				services
+			}
 		});
 	} catch (err) {
-		console.log(err);
 		res.status(500).send({
-		status: 'failure',
-		message: "We're unable to process the request."
+			status: 'failure',
+			message: "We're unable to process the request."
 		});
 	}
 });
