@@ -22,7 +22,7 @@ export default function MainNav() {
           </Typography>
           {auth && (
             <div>
-              <Link to={`/app/profile/`} target="_blank" style={{ textDecoration: 'none' }}>
+              <Link to={`/app/profile/`} style={{ textDecoration: 'none' }}>
                 <IconButton
                   size="large"
                   aria-label="account of current user"
