@@ -11,7 +11,12 @@ const AuthRoute = () => {
       try {
         if (window.catalyst && window.catalyst.auth) {
           const result = await window.catalyst.auth.isUserAuthenticated();
-          setIsUserAuthenticated(result);
+          if (result.status == 200) {
+            setIsUserAuthenticated(result);
+          } else {
+            setIsUserAuthenticated(false);
+          }
+          console.log("result auth:", result.status);
         } else {
           console.error('Zoho Catalyst SDK is not loaded.');
           setIsUserAuthenticated(false);

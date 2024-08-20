@@ -4,6 +4,7 @@ module.exports = (context, basicIO) => {
   const requestDetails = catalystApp.userManagement().getSignupValidationRequest(basicIO)
   if (requestDetails) {
     if (requestDetails.user_details.email_id.includes('@smartosc.com')) {
+      context.log("success sign-up");
       // The actions that occur in the event of a successful authentication can be customized
       basicIO.write(JSON.stringify({
         status: 'success',
@@ -17,11 +18,13 @@ module.exports = (context, basicIO) => {
              }
       }))
     } else {
+      context.log("fail sign-up");
       // The user has failed authentication
       basicIO.write(JSON.stringify({
         status: 'failure'
       }))
     }
   }
+  context.log("end validation sign-up");
   context.close()
 }
