@@ -30,7 +30,6 @@ function PortalDetail() {
     }, []);
 
     const { id } = useParams();
-    console.log(id);
 
     const [portalItemDetails, setPortalItemDetails] = useState<PortalDetail | null>(null);
     const [serviceItems, setServiceItems] = useState<Service[]>([]);
@@ -50,9 +49,6 @@ function PortalDetail() {
             });
         }
     }, [fetchState]);
-
-    console.log("portalDetails", portalItemDetails);
-    console.log("services", serviceItems);
 
     return (
         <ServiceDeskLayout>

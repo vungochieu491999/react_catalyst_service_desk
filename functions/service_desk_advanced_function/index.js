@@ -131,7 +131,7 @@ app.get('/portal/:ROWID', async (req, res) => {
 });
 
 // Get service
-app.get('/service', async (req, res) => {
+app.get('/service/search', async (req, res) => {
 	try {
 		const { query } = req.query;
 
@@ -179,5 +179,88 @@ app.get('/service', async (req, res) => {
 		});
 	}
 });
+
+// Get service
+app.get('/service/:ROWID', async (req, res) => {
+	try {
+		const { ROWID } = req.params;
+
+		var catalyst = catalystSDK.initialize(req);
+		let serviceItem = null;
+
+		queryServices = `SELECT s.ROWID, s.name, s.descriptions, s.feature_image,
+		p.ROWID, p.name, p.descriptions
+		FROM Services s
+		JOIN ServicePortals sp ON s.ROWID = sp.serviceId
+		JOIN Portals p ON p.ROWID = sp.portalId
+		WHERE s.ROWID = ${ROWID}`;
+
+		// queryServices = `SELECT s.ROWID, s.name, s.descriptions FROM Services s WHERE s.name like '*${query}*'`;
+
+		await ZCQL(catalyst, queryServices)
+		.then((rows) => {
+			serviceItem = {
+				id: rows[0]?.s.ROWID,
+				name: rows[0]?.s.name,
+				descriptions: rows[0]?.s.descriptions,
+				feature_image: rows[0]?.s?.feature_image,
+				portalId: rows[0]?.p.ROWID,
+				portalName: rows[0]?.p.name,
+				portalDescriptions: rows[0]?.p.descriptions,
+			}
+		})
+		.catch((err) => {
+			console.log(err);
+			res.status(500).send(err);
+		});
+
+		res.status(200).send({
+			status: 'success',
+			data: {
+				serviceItem,
+			}
+		});
+	} catch (err) {
+		console.log(err);
+		res.status(500).send({
+			status: 'failure',
+			message: "We're unable to process the request."
+		});
+	}
+});
+
+app.post('/portal/:portalId/create/:serviceId', async (req,res) => {
+	try {
+		const body = req.body;
+		const { portalId, serviceId } = req.params;
+		let dataInsert = [];
+
+		var catalystApp = catalystSDK.initialize(req);
+
+		//Get a datastore instance 
+		let datastore = catalystApp.datastore(); 
+		let table = datastore.table('ServiceRequests'); 
+		let insertPromise = table.insertRow(body); 
+		await insertPromise.then((row) => {
+			dataInsert = row;
+			console.log("insert row success: ", row);
+		}).catch((err) => {
+			console.error("err insert row : ", err);
+		});
+		
+		res.status(200).send({
+			status: 'success',
+			data: {
+				dataInsert,
+			}
+		});
+	} catch (err) {
+		console.log(err);
+		res.status(500).send({
+			status: 'failure',
+			message: "We're unable to process the request."
+		});
+	}
+})
 
 module.exports = app;

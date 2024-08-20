@@ -9,6 +9,7 @@ import Signup from './pages/client/auth/signup';
 import LoginPage from './pages/client/auth/login';
 import UserProfile from './pages/client/user/profile';
 import AuthRoute from './utils/AuthRoute';
+import CreateServiceRequest from './pages/client/portal/create';
 
 declare global {
   interface Window {
@@ -29,7 +30,7 @@ const App: React.FC = () => {
           <Route path="/app/profile" element={<UserProfile />} />
           <Route path="/app/portal" element={<PortalList />} />
           <Route path="/app/portal/:id" element={<PortalDetail />} />
-          <Route path="/app/portal/:id/create/:serviceId" element={<PortalList />} />
+          <Route path="/app/portal/:id/create/:serviceId" element={<CreateServiceRequest />} />
         </Route>
         <Route path="*" element={<h2>404 Not Found</h2>} />
       </Routes>

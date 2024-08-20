@@ -3,7 +3,7 @@ module.exports = (context, basicIO) => {
   const catalystApp = catalyst.initialize(context)
   const requestDetails = catalystApp.userManagement().getSignupValidationRequest(basicIO)
   if (requestDetails) {
-    if (requestDetails.user_details.email_id.includes('@zylker.com')) {
+    if (requestDetails.user_details.email_id.includes('@smartosc.com')) {
       // The actions that occur in the event of a successful authentication can be customized
       basicIO.write(JSON.stringify({
         status: 'success',

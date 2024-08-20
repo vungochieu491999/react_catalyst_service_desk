@@ -41,7 +41,7 @@ function PortalList() {
     // Debounced search function to avoid making too many requests
     const fetchServices = useCallback(
         debounce((query: string) => {
-            axios.get('/server/service_desk_advanced_function/service', { params: { query } })
+            axios.get('/server/service_desk_advanced_function/service/search', { params: { query } })
                 .then(response => {
                     const { data: { serviceItems } } = response.data;
                     console.log(serviceItems);
@@ -184,7 +184,7 @@ function PortalList() {
                                                 textOverflow: 'ellipsis',
                                                 maxWidth: '100%', // Adjust the maxWidth as needed
                                             }}>
-                                                <Link to={`/app/portal/${item.id}/create/${item.id}`} style={{ textDecoration: 'none' }}>
+                                                <Link to={`/app/portal/${item.portalId}/create/${item.id}`} style={{ textDecoration: 'none' }}>
                                                     {item.name}
                                                 </Link>
                                                 {' ○ '}
