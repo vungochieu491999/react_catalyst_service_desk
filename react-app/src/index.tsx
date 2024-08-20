@@ -1,4 +1,3 @@
-import React from 'react';
 import { createRoot } from 'react-dom/client'; // Use createRoot from react-dom/client for React 18
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 

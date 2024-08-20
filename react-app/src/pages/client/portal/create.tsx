@@ -184,7 +184,7 @@ function PortalList() {
                                                 textOverflow: 'ellipsis',
                                                 maxWidth: '100%', // Adjust the maxWidth as needed
                                             }}>
-                                                <Link to={`/app/portal/${item.id}/create/${item.id}`} style={{ textDecoration: 'none' }}>
+                                                <Link to={`/app/portal/${item.id}`} style={{ textDecoration: 'none' }}>
                                                     {item.name}
                                                 </Link>
                                                 {' ○ '}

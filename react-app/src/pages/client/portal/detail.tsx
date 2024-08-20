@@ -5,6 +5,7 @@ import Footer from '../../../components/layout/footer';
 import axios from 'axios';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
+import DOMPurify from 'dompurify';
 
 // Define the types for App component state
 interface PortalDetail {
@@ -102,8 +103,7 @@ function PortalDetail() {
                                 <Typography variant="h6" sx={{ fontWeight: 'bold', marginBottom: 1 }}>
                                     {portalItemDetails?.name}
                                 </Typography>
-                                <Typography variant="body2" >
-                                    {portalItemDetails?.descriptions}
+                                <Typography variant="body2" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(portalItemDetails?.descriptions || '') }}>
                                 </Typography>
                             </Box>
                         </Box>
