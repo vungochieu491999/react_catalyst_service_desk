@@ -4,9 +4,8 @@ import ServiceDeskLayout from '../../../components/layout/ServiceDeskLayout';
 import Footer from '../../../components/layout/footer';
 import axios from 'axios';
 import { useParams } from 'react-router';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import DOMPurify from 'dompurify';
-import Link from '@mui/material/Link';
 
 // Define the types for App component state
 interface PortalDetail {
@@ -89,9 +88,11 @@ function PortalDetail() {
                         <Box sx={{ padding: 6 }}>
                             <Breadcrumbs aria-label="breadcrumb">
                                 <Link
-                                    underline="hover"
+                                    to="/app/"
                                     color="inherit"
-                                    href="/app/"
+                                    style={{ textDecoration: 'none' }}
+                                    onMouseEnter={(e) => e.currentTarget.style.textDecoration = 'underline'}
+                                    onMouseLeave={(e) => e.currentTarget.style.textDecoration = 'none'}
                                 >
                                     All Portals
                                 </Link>
@@ -166,7 +167,7 @@ function PortalDetail() {
                                                         textOverflow: 'ellipsis',
                                                         maxWidth: '100%', // Adjust the maxWidth as needed
                                                     }}>
-                                                        <Link href={`/app/portal/${portalItemDetails.id}/create/${item.id}`} style={{ textDecoration: 'none' }}>
+                                                        <Link to={`/app/portal/${portalItemDetails.id}/create/${item.id}`} style={{ textDecoration: 'none' }}>
                                                             {item.name}
                                                         </Link>
                                                     </Box>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Container, Typography, TextField, Button, MenuItem, Select, FormControl, InputLabel, Snackbar, Alert, SelectChangeEvent, Link, Breadcrumbs } from '@mui/material';
+import { Box, Container, Typography, TextField, Button, MenuItem, Select, FormControl, InputLabel, Snackbar, Alert, SelectChangeEvent, Breadcrumbs } from '@mui/material';
 import { useNavigate, useParams } from 'react-router';
 import ServiceDeskLayout from '../../../components/layout/ServiceDeskLayout';
 import Footer from '../../../components/layout/footer';
@@ -7,6 +7,7 @@ import axios from 'axios';
 import DOMPurify from 'dompurify';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import { Link } from 'react-router-dom';
 
 // Define the types for App component state
 interface Service {
@@ -154,16 +155,20 @@ function CreateServiceRequest() {
                         <Box sx={{ padding: 6 }}>
                             <Breadcrumbs aria-label="breadcrumb">
                                 <Link
-                                    underline="hover"
                                     color="inherit"
-                                    href="/app/"
+                                    to="/app/"
+                                    style={{ textDecoration: 'none' }}
+                                    onMouseEnter={(e) => e.currentTarget.style.textDecoration = 'underline'}
+                                    onMouseLeave={(e) => e.currentTarget.style.textDecoration = 'none'}
                                 >
                                     All Portals
                                 </Link>
                                 <Link
-                                    underline="hover"
                                     color="inherit"
-                                    href={`/app/portal/${id}`}
+                                    to={`/app/portal/${id}`}
+                                    style={{ textDecoration: 'none' }}
+                                    onMouseEnter={(e) => e.currentTarget.style.textDecoration = 'underline'}
+                                    onMouseLeave={(e) => e.currentTarget.style.textDecoration = 'none'}
                                 >
                                     Portal
                                 </Link>
