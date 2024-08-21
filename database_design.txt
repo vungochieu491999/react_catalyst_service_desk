@@ -1,23 +1,91 @@
-*tables:
+Potals:
+Column Id	Column Name	Data Type	Default value	Search Indexed	Is Unique	Is Mandatory	PII/ePHI	
+23219000000033048	ROWID	bigint		false	false	false	false	
+23219000000033050	CREATORID	bigint		true	false	false	false	
+23219000000033052	CREATEDTIME	datetime		true	false	false	false	
+23219000000033054	MODIFIEDTIME	datetime		true	false	false	false	
+23219000000033767	name	varchar		true	false	true	false	 
+23219000000033773	descriptions	text		false	false	false	false	 
+23219000000033778	feature_image	text		false	false	false	false	 
+23219000000033783	active	boolean	true	true	false	false	false	 
+23219000000033789	has_group	boolean	true	true	false	false	false
 
-1. tbl_services:
-schemas:
-- id
-- title
-- description
-- url
-- feature_image
+Services:
+Column Id	Column Name	Data Type	Default value	Search Indexed	Is Unique	Is Mandatory	PII/ePHI	
+23219000000026630	ROWID	bigint		false	false	false	false	
+23219000000026632	CREATORID	bigint		true	false	false	false	
+23219000000026634	CREATEDTIME	datetime		true	false	false	false	
+23219000000026636	MODIFIEDTIME	datetime		true	false	false	false	
+23219000000031029	name	varchar		true	false	true	false	 
+23219000000031039	descriptions	text		false	false	false	false	 
+23219000000033862	feature_image	text		false	false	false	false
 
-default row:
-1. id: 1, title: IT Help Desk, description: Description, url: /app/it-help-desk, feature_image: images/help-desk-svgrepo-com.svg
+ServiceGroups:
+Column Id	Column Name	Data Type	Default value	Search Indexed	Is Unique	Is Mandatory	PII/ePHI	
+23219000000025908	ROWID	bigint		false	false	false	false	
+23219000000025910	CREATORID	bigint		true	false	false	false	
+23219000000025912	CREATEDTIME	datetime		true	false	false	false	
+23219000000025914	MODIFIEDTIME	datetime		true	false	false	false	
+23219000000027364	portal_id	foreign key		false	false	false	false	 
+23219000000027370	name	varchar		false	false	false	false	 
+23219000000027375	descriptions	text		false	false	false	false	 
+23219000000027380	feature_image	text		false	false	false	false	 
+23219000000027403	active	boolean	true	false	false	false	false
 
-2. tbl_service_type:
-schemas:
-- id
-- service_id
-- type
-- description
-- feature_image
+ServicePortals:
+Column Id	Column Name	Data Type	Default value	Search Indexed	Is Unique	Is Mandatory	PII/ePHI	
+23219000000025186	ROWID	bigint		false	false	false	false	
+23219000000025188	CREATORID	bigint		true	false	false	false	
+23219000000025190	CREATEDTIME	datetime		true	false	false	false	
+23219000000025192	MODIFIEDTIME	datetime		true	false	false	false	
+23219000000033826	ServiceId	foreign key		true	false	false	false	 
+23219000000033832	PortalId	foreign key		true	false	false	false
 
-default row:
-1. id: 1, service_id: 1, type: Get IT Help, description: Get assistance for general IT problems and questions, url: /app/it-help-desk/get-it-help, feature_image: images/help-desk-svgrepo-com.svg
+TodoItems:
+Column Id	Column Name	Data Type	Default value	Search Indexed	Is Unique	Is Mandatory	PII/ePHI	
+23219000000012216	ROWID	bigint		false	false	false	false	
+23219000000012218	CREATORID	bigint		true	false	false	false	
+23219000000012220	CREATEDTIME	datetime		true	false	false	false	
+23219000000012222	MODIFIEDTIME	datetime		true	false	false	false	
+23219000000012937	Notes	text		false	false	true	false
+
+ServiceRequests:
+Column Id	Column Name	Data Type	Default value	Search Indexed	Is Unique	Is Mandatory	PII/ePHI	
+23219000000034974	ROWID	bigint		false	false	false	false	
+23219000000034976	CREATORID	bigint		true	false	false	false	
+23219000000034978	CREATEDTIME	datetime		true	false	false	false	
+23219000000034980	MODIFIEDTIME	datetime		true	false	false	false	
+23219000000038700	descriptions	text		false	false	false	false	 
+23219000000038705	serviceId	foreign key		false	false	false	false	 
+23219000000038710	serviceName	text		false	false	false	false	 
+23219000000038715	portalId	foreign key		false	false	false	false	 
+23219000000038720	portalName	text		false	false	false	false	 
+23219000000038730	expireDate	datetime		false	false	false	false	 
+23219000000038744	title	text		false	false	false	false	 
+23219000000038754	approvalByEmailId	text		false	false	false	false
+
+Users:
+Column Id	Column Name	Data Type	Default value	Search Indexed	Is Unique	Is Mandatory	PII/ePHI	
+23219000000034114	ROWID	bigint		false	false	false	false	
+23219000000034116	CREATORID	bigint		true	false	false	false	
+23219000000034118	CREATEDTIME	datetime		true	false	false	false	
+23219000000034120	MODIFIEDTIME	datetime		true	false	false	false	
+23219000000034835	zuid	bigint		true	true	true	false	 
+23219000000034841	zaaid	bigint		true	true	true	false	 
+23219000000034847	org_id	bigint		true	false	false	false	 
+23219000000034853	status	varchar		true	false	false	false	 
+23219000000034859	is_confirmed	boolean	true	true	false	false	false	 
+23219000000034865	email_id	varchar		true	false	false	false	 
+23219000000034871	first_name	varchar		false	false	false	false	 
+23219000000034876	last_name	varchar		false	false	false	false	 
+23219000000034881	created_time	text		false	false	false	false	 
+23219000000034886	modified_time	text		false	false	false	false	 
+23219000000034891	invited_time	text		false	false	false	false	 
+23219000000034896	role_details	text		false	false	false	false	 
+23219000000034901	role_name	varchar		false	false	false	false	 
+23219000000034906	role_id	bigint		false	false	false	false	 
+23219000000034911	user_type	varchar		false	false	false	false	 
+23219000000034916	source	varchar		false	false	false	false	 
+23219000000034921	user_id	bigint		true	false	false	false	 
+23219000000034927	locale	text		false	false	false	false	 
+23219000000034932	time_zone	text		false	false	false	false
