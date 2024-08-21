@@ -346,3 +346,938 @@ Response Headers: {"server":"ZGS","date":"Tue, 20 Aug 2024 20:36:14 GMT","conten
 [debug] [2024-08-20T20:36:14.207Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
 
 [debug] [2024-08-20T20:36:14.208Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
+[debug] [2024-08-21T03:51:10.357Z] : 
+[debug] [2024-08-21T03:51:10.359Z] : ----------------------------------------------------------------------
+[debug] [2024-08-21T03:51:10.359Z] : Command:      C:\laragon\bin\nodejs\node-v20.11.1-win-x64\node.exe C:\laragon\bin\nodejs\node-v20.11.1-win-x64\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2024-08-21T03:51:10.360Z] : CLI Version:  1.17.6
+[debug] [2024-08-21T03:51:10.360Z] : Platform:     win32
+[debug] [2024-08-21T03:51:10.360Z] : Node Version: v20.11.1
+[debug] [2024-08-21T03:51:10.360Z] : Time:         Wed Aug 21 2024 10:51:10 GMT+0700 (Indochina Time)
+[debug] [2024-08-21T03:51:10.361Z] : ----------------------------------------------------------------------
+[debug] [2024-08-21T03:51:10.361Z] : 
+[debug] [2024-08-21T03:51:23.821Z] : > authorizing via signed-in user option
+[debug] [2024-08-21T03:51:23.822Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2024-08-21T03:51:23.890Z] : > refreshing access token <
+[debug] [2024-08-21T03:51:23.891Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-08-21T03:51:24.487Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 21 Aug 2024 03:51:24 GMT","content-type":"application/json;charset=UTF-8","content-length":"1980","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=a7f15cb1555106de5ac96d088b72e7c8; Path=/","iamcsr=1a5ce246-13bd-43a8-b2fa-7a2334070a00;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=1a5ce246-13bd-43a8-b2fa-7a2334070a00;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-08-21T03:51:24.507Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/23219000000012009 
+
+[debug] [2024-08-21T03:51:25.519Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 21 Aug 2024 03:51:25 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=8541f6b5-a46d-4b90-a4f9-978290bd3f81;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=8541f6b5-a46d-4b90-a4f9-978290bd3f81;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-08-21T03:51:25.521Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/23219000000012009/environment 
+
+[debug] [2024-08-21T03:51:25.746Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 21 Aug 2024 03:51:25 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=63dd9cf89a6678b816d9580ec827ee61; Path=/","ZD_CSRF_TOKEN=e782168d-3517-4a95-97dd-45acbd6a753f;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=e782168d-3517-4a95-97dd-45acbd6a753f;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-08-21T03:51:28.937Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/23219000000012009/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2024-08-21T03:51:30.820Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 21 Aug 2024 03:51:29 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/","ZD_CSRF_TOKEN=b398d19d-44e1-4bdd-a8d2-4c3df2f49a02;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b398d19d-44e1-4bdd-a8d2-4c3df2f49a02;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-08-21T03:51:30.828Z] : unknown eol undefined hence skipping check
+[debug] [2024-08-21T03:51:30.831Z] : unknown eol undefined hence skipping check
+[debug] [2024-08-21T03:51:30.832Z] : unknown eol undefined hence skipping check
+[debug] [2024-08-21T03:51:35.738Z] : http port : '4000' is not available. Hence port '4001' will be used instead.
+[info] [2024-08-21T03:52:08.770Z] : [react-plugin]: Starting the development server...
+
+[info] [2024-08-21T03:52:08.772Z] : 
+[info] [2024-08-21T03:52:08.773Z] : i Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2024-08-21T03:52:08.773Z] : 
+[info] [2024-08-21T03:52:21.692Z] : 
+[info] [2024-08-21T03:52:21.693Z] :  >>>>>>>>>>>>>> BasicIO <<<<<<<<<<<<<< 
+[info] [2024-08-21T03:52:21.694Z] : i authorized_portal_function: http://localhost:3000/server/authorized_portal_function/execute
+[info] [2024-08-21T03:52:21.694Z] : 
+[info] [2024-08-21T03:52:21.694Z] : 
+[info] [2024-08-21T03:52:21.694Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2024-08-21T03:52:21.695Z] : i todo_list_advanced_function   : http://localhost:3000/server/todo_list_advanced_function/
+[info] [2024-08-21T03:52:21.696Z] : i service_desk_advanced_function: http://localhost:3000/server/service_desk_advanced_function/
+[info] [2024-08-21T03:52:21.696Z] : 
+[info] [2024-08-21T03:52:21.696Z] : 
+[info] [2024-08-21T03:52:21.696Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2024-08-21T03:52:21.697Z] : i client[react-app]: http://localhost:3000/app/
+[info] [2024-08-21T03:52:21.697Z] : 
+[info] [2024-08-21T03:54:02.894Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T03:54:02.900Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 27:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 51:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 34:18:  'setPage' is assigned a value but never used                                                                @typescript-eslint/no-unused-vars
+  Line 42:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\utils\AuthRoute.tsx
+  Line 14:29:  Expected '===' and instead saw '=='  eqeqeq
+[info] [2024-08-21T03:54:02.900Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T03:54:02.900Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T03:54:22.793Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T03:54:24.816Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T03:54:24.826Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 27:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 51:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 34:18:  'setPage' is assigned a value but never used                                                                @typescript-eslint/no-unused-vars
+  Line 42:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T03:54:24.827Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T03:54:24.828Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T03:54:25.044Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2024-08-21T03:54:46.892Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T03:54:46.899Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 27:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 51:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 34:18:  'setPage' is assigned a value but never used                                                                @typescript-eslint/no-unused-vars
+  Line 42:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\client\user\profile.tsx
+  Line 35:10:  'isUserAuthenticated' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T03:54:46.900Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T03:54:46.900Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T03:54:47.059Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2024-08-21T03:55:30.545Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T03:55:32.031Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T03:55:32.036Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 27:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 51:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 34:18:  'setPage' is assigned a value but never used                                                                @typescript-eslint/no-unused-vars
+  Line 42:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T03:55:32.037Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T03:55:32.038Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T03:55:32.247Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2024-08-21T03:56:04.959Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T03:56:06.663Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T03:56:06.668Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 27:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 51:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T03:56:06.669Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T03:56:06.669Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T03:56:06.835Z] : [react-plugin]: Files successfully emitted, waiting for typecheck results...
+[info] [2024-08-21T03:56:51.058Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T03:56:52.064Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T03:56:52.068Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 27:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 51:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T03:56:52.069Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T03:56:52.069Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:03:23.028Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:03:26.704Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:03:26.708Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:26:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 27:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 51:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:03:26.709Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:03:26.709Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:04:30.801Z] : 
+change of index.js in service_desk_advanced_function detected. Preparing your function, please wait...
+[info] [2024-08-21T04:04:53.796Z] : i AdvancedIO[service_desk_advanced_function]: ready!
+[info] [2024-08-21T04:04:53.798Z] : i AdvancedIO[service_desk_advanced_function]: http://localhost:3000/server/service_desk_advanced_function/
+[info] [2024-08-21T04:04:54.813Z] : 
+change of index.js in service_desk_advanced_function detected. Preparing your function, please wait...
+[info] [2024-08-21T04:04:58.084Z] : i AdvancedIO[service_desk_advanced_function]: ready!
+[info] [2024-08-21T04:04:58.084Z] : i AdvancedIO[service_desk_advanced_function]: http://localhost:3000/server/service_desk_advanced_function/
+[info] [2024-08-21T04:06:43.076Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:06:44.706Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:06:44.711Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:26:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 27:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 51:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:06:44.711Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:06:44.712Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:07:04.583Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:07:05.836Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:07:05.840Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:26:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 27:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 51:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:07:05.841Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:07:05.841Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:07:34.317Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:07:35.940Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:07:35.944Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:26:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 27:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 51:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:07:35.945Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:07:35.945Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:07:44.847Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:07:46.278Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:07:46.282Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:26:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 27:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 51:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:07:46.283Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:07:46.283Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:07:54.347Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:07:55.790Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:07:55.795Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:26:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 27:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 51:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:07:55.796Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:07:55.796Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:08:37.588Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:08:38.736Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:08:38.740Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:26:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 27:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 51:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:08:38.740Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:08:38.741Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:08:45.004Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:08:46.282Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:08:46.286Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:26:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 27:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 51:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:08:46.287Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:08:46.287Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:09:06.879Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:09:08.308Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:09:08.312Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:26:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 27:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 51:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:09:08.313Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:09:08.313Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:09:26.363Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:09:27.748Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:09:27.752Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:26:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 27:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 51:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:09:27.752Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:09:27.752Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:09:46.342Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:09:47.560Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:09:47.564Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:26:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 27:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 51:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:09:47.565Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:09:47.565Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:10:08.125Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:10:09.706Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:10:09.711Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:26:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 27:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 51:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:10:09.711Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:10:09.712Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:11:34.843Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:11:37.206Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:11:37.212Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:39:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 27:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 51:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:11:37.214Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:11:37.214Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:13:10.761Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:13:12.220Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:13:12.224Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:39:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 28:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 52:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:13:12.224Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:13:12.225Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:13:42.177Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:13:43.450Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:13:43.456Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:39:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 28:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 52:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:13:43.457Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:13:43.458Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:14:26.250Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:14:27.638Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:14:27.643Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:39:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 28:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 52:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:14:27.644Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:14:27.644Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:14:32.891Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:14:34.215Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:14:34.219Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:39:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 28:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 52:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:14:34.220Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:14:34.220Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:16:14.561Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:16:17.158Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:16:17.162Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:39:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 28:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 52:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:16:17.162Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:16:17.163Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:17:37.726Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:17:39.348Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:17:39.352Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:39:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 28:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 52:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:17:39.353Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:17:39.353Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:18:05.976Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:18:08.003Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:18:08.013Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:39:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 28:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 52:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:18:08.016Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:18:08.017Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:18:08.456Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:18:10.306Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:18:10.312Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:39:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 28:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 52:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:18:10.313Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:18:10.313Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:18:19.471Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:18:20.921Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:18:20.927Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:39:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 28:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 52:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:18:20.929Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:18:20.929Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:20:03.227Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:20:05.200Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:20:05.205Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\create.tsx
+  Line 7:8:  'DOMPurify' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:39:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 28:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 52:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:20:05.206Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:20:05.206Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:20:25.770Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:20:27.010Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:20:27.016Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\create.tsx
+  Line 7:8:  'DOMPurify' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:39:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 28:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 52:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:20:27.017Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:20:27.017Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:20:42.081Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:20:42.989Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:20:42.994Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\create.tsx
+  Line 7:8:  'DOMPurify' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:39:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 28:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 52:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:20:42.995Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:20:42.996Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:20:43.124Z] : [react-plugin]: Compiling...
+[info] [2024-08-21T04:20:43.749Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-08-21T04:20:43.754Z] : [react-plugin]: [eslint] 
+src\components\layout\ServiceDeskLayout.tsx
+  Line 2:15:  'Container' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 4:8:   'Footer' is defined but never used     @typescript-eslint/no-unused-vars
+
+src\components\layout\horizontal\main-nav.tsx
+  Line 12:16:  'setAuth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\create.tsx
+  Line 7:8:  'DOMPurify' is defined but never used  @typescript-eslint/no-unused-vars
+
+src\pages\client\portal\detail.tsx
+  Line 1:39:   'Paper' is defined but never used                                                                      @typescript-eslint/no-unused-vars
+  Line 2:10:   'useCallback' is defined but never used                                                                @typescript-eslint/no-unused-vars
+  Line 28:10:  'PortalDetail' is already defined                                                                      @typescript-eslint/no-redeclare
+  Line 52:8:   React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src\pages\client\portal\index.tsx
+  Line 41:27:  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+src\pages\home-todo.tsx
+  Line 99:10:  'submitting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+[info] [2024-08-21T04:20:43.755Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-08-21T04:20:43.756Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-08-21T04:20:46.246Z] : Shutting down server
+[info] [2024-08-21T04:20:46.433Z] : 
+[info] [2024-08-21T04:20:46.434Z] : √ Shutdown complete
+[debug] [2024-08-21T04:20:46.434Z] : NO ERRORS REGISTERED
+[debug] [2024-08-21T04:20:46.435Z] : EXEC ENDED with event: serve, message: success
+[debug] [2024-08-21T04:20:46.435Z] : TOTAL DURATION OF COMMAND EXEC : 1762796
+[debug] [2024-08-21T04:20:46.484Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2024-08-21T04:20:48.530Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Wed, 21 Aug 2024 04:20:48 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"147","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/","ZD_CSRF_TOKEN=2422fedb-8fb0-46b4-b3fd-d76b72712b7a;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=2422fedb-8fb0-46b4-b3fd-d76b72712b7a;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=BFB416E21A91789C3BD16930650C8FA8; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-08-21T04:20:48.531Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
+
+[debug] [2024-08-21T04:20:48.532Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range

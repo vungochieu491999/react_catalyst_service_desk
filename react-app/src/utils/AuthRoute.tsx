@@ -11,7 +11,7 @@ const AuthRoute = () => {
       try {
         if (window.catalyst && window.catalyst.auth) {
           const result = await window.catalyst.auth.isUserAuthenticated();
-          if (result.status == 200) {
+          if (result.status === 200) {
             setIsUserAuthenticated(result);
           } else {
             setIsUserAuthenticated(false);

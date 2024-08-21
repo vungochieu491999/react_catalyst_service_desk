@@ -32,7 +32,6 @@ const StyledCard = styled(Card)({
 
 const UserProfile: React.FC = () => {
   const [isFetching, setIsFetching] = useState<boolean>(true);
-  const [isUserAuthenticated, setIsUserAuthenticated] = useState<boolean>(false);
   const [userDetails, setUserDetails] = useState<UserDetails>({
     firstName: '',
     lastName: '',
@@ -52,7 +51,6 @@ const UserProfile: React.FC = () => {
           timeZone: result.content.time_zone,
           createdTime: result.content.created_time,
         });
-        setIsUserAuthenticated(true);
       } catch (err) {
         console.error('Failed to fetch user details:', err);
       } finally {

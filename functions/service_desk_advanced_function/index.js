@@ -93,7 +93,7 @@ app.get('/portal/:ROWID', async (req, res) => {
 		});
 
 		if (portalDetails) {
-			queryServicePortal = `SELECT s.ROWID, s.name, s.descriptions FROM Services s JOIN ServicePortals sp ON s.ROWID = sp.serviceId WHERE sp.portalId = ${ROWID}`;
+			queryServicePortal = `SELECT s.ROWID, s.name, s.descriptions, s.feature_image FROM Services s JOIN ServicePortals sp ON s.ROWID = sp.serviceId WHERE sp.portalId = ${ROWID}`;
 
 			await ZCQL(catalyst, queryServicePortal)
 			.then((rows) => {
@@ -101,6 +101,7 @@ app.get('/portal/:ROWID', async (req, res) => {
 					id: row.s.ROWID,
 					name: row.s.name,
 					descriptions: row.s.descriptions,
+					feature_image: row.s?.feature_image,
 				}))
 			})
 			.catch((err) => {

@@ -31,7 +31,6 @@ function PortalList() {
         document.title = "All Portals";
     }, []);
 
-    const [page, setPage] = useState(1);
     const [portalItems, setPortalItems] = useState<Portal[]>([]);
     const [serviceItems, setServiceItems] = useState<Service[]>([]);
     const [fetchServiceItems, setFetchServiceItems] = useState<'init' | 'loading' | 'fetched'>('init');
@@ -68,7 +67,7 @@ function PortalList() {
 
     useEffect(() => {
         if (fetchState !== 'fetched') {
-            axios.get('/server/service_desk_advanced_function/portal', { params: { page, perPage: 200 } })
+            axios.get('/server/service_desk_advanced_function/portal', { params: { page: 1, perPage: 200 } })
                 .then((response) => {
                     const { data: { portals: portalItems } } = response.data;
                     setPortalItems(portalItems);
@@ -78,7 +77,7 @@ function PortalList() {
                     console.log(err.response);
                 });
         }
-    }, [fetchState, page]);
+    }, [fetchState]);
 
     return (
         <ServiceDeskLayout>

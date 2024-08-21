@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Container, Typography, TextField, Button, MenuItem, Select, FormControl, InputLabel, Snackbar, Alert, SelectChangeEvent } from '@mui/material';
+import { Box, Container, Typography, TextField, Button, MenuItem, Select, FormControl, InputLabel, Snackbar, Alert, SelectChangeEvent, Link, Breadcrumbs } from '@mui/material';
 import { useNavigate, useParams } from 'react-router';
 import ServiceDeskLayout from '../../../components/layout/ServiceDeskLayout';
 import Footer from '../../../components/layout/footer';
@@ -143,7 +143,7 @@ function CreateServiceRequest() {
                             left: '50%',
                             transform: 'translateX(-50%)',
                             backgroundColor: 'white',
-                            width: '100%',
+                            width: '900px',
                             maxWidth: 'md',
                             padding: 2,
                             overflow: 'visible',
@@ -152,6 +152,24 @@ function CreateServiceRequest() {
                         }}
                     >
                         <Box sx={{ padding: 6 }}>
+                            <Breadcrumbs aria-label="breadcrumb">
+                                <Link
+                                    underline="hover"
+                                    color="inherit"
+                                    href="/app/"
+                                >
+                                    All Portals
+                                </Link>
+                                <Link
+                                    underline="hover"
+                                    color="inherit"
+                                    href={`/app/portal/${id}`}
+                                >
+                                    Portal
+                                </Link>
+                                <Typography color="text.primary">{serviceItem?.name}</Typography>
+                            </Breadcrumbs>
+
                             <Box className="header-text"
                                 sx={{
                                     boxSizing: 'border-box',
@@ -164,8 +182,6 @@ function CreateServiceRequest() {
                                 }}>
                                 <Typography variant="h6" sx={{ fontWeight: 'bold', marginBottom: 1 }}>
                                     {serviceItem?.name}
-                                </Typography>
-                                <Typography variant="body2" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(serviceItem?.descriptions || '') }}>
                                 </Typography>
                             </Box>
                         </Box>
